@@ -170,6 +170,14 @@
     </a>
 
 </nav>
+
+<button onclick="toggleMobileMenu()"
+    class="md:hidden flex items-center justify-center w-10 h-10 text-on-surface"
+    aria-label="เปิดเมนู">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+</button>
 <script>
 function toggleMobileMenu() {
     const menu = document.getElementById('mobileMenu');
@@ -178,9 +186,20 @@ function toggleMobileMenu() {
 }
 </script>
 </header>
+<div id="mobileMenu" class="hidden md:hidden flex-col bg-surface-container-lowest border-b border-outline-variant fixed top-16 left-0 w-full z-40 shadow-lg">
+    <a href="#water-supply" onclick="toggleMobileMenu()" class="block px-gutter py-3 text-on-surface-variant border-b border-outline-variant">น้ำประปา</a>
+    <a href="#clean-drinking-water" onclick="toggleMobileMenu()" class="block px-gutter py-3 text-on-surface-variant border-b border-outline-variant">น้ำดื่มสะอาด</a>
+    <a href="#solar-energy" onclick="toggleMobileMenu()" class="block px-gutter py-3 text-on-surface-variant border-b border-outline-variant">พลังงานแสงอาทิตย์</a>
+    <a href="#electric-control-panels" onclick="toggleMobileMenu()" class="block px-gutter py-3 text-on-surface-variant border-b border-outline-variant">ระบบตู้ควบคุมไฟฟ้า</a>
+    <a href="#safe-cities" onclick="toggleMobileMenu()" class="block px-gutter py-3 text-on-surface-variant border-b border-outline-variant">เมืองปลอดภัย</a>
+    <a href="#drones" onclick="toggleMobileMenu()" class="block px-gutter py-3 text-on-surface-variant border-b border-outline-variant">โดรน</a>
+    <a href="#cld-screens" onclick="toggleMobileMenu()" class="block px-gutter py-3 text-on-surface-variant border-b border-outline-variant">จอ CLD</a>
+    <a href="#contact" onclick="toggleMobileMenu()" class="block px-gutter py-3 text-on-surface-variant border-b border-outline-variant">ติดต่อเรา</a>
+    <a href="https://line.me/ti/p/~@Thaisolarcell" target="_blank" rel="noopener" class="block px-gutter py-3 text-[#39CD00] font-medium">ติดต่อทาง LINE</a>
+</div>
 <main>
 <!-- Hero Section -->
-<section class="relative w-full h-[525px] flex items-center justify-center overflow-hidden bg-surface-container-low">
+<section class="relative w-full h-[280px] sm:h-[380px] md:h-[525px] flex items-center justify-center overflow-hidden bg-surface-container-low">
 <div class="absolute inset-0 z-0">
 <div class="bg-cover bg-center w-full h-full" data-alt="Hero Image" style="background-image: url('https://storage.keepital.com/public/company/th/s/u/sunnex-technology-co-ltd/images/banner/fdZz7LvBDidZQ4cM.jpeg')"></div>
 </div>
