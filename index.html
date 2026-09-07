@@ -56,7 +56,7 @@
           "surface-container-highest": "#e1e3e4",
           "primary-container": "#f2994a",
           "surface-container-lowest": "#ffffff",
-          "primary": "#41A85F",
+          "primary": "#054097",
           "secondary": "#1961a1",
           "outline-variant": "#d9c2b3"
         },
@@ -118,47 +118,259 @@
             <span class="text-xs">▼</span>
         </button>
 
-        <!-- Dropdown -->
-        <div class="absolute left-0 top-full pt-2 hidden group-hover:block z-50">
-            <div class="w-[220px] bg-white rounded-xl border border-outline-variant shadow-lg p-2">
+<!-- Dropdown Mega Menu -->
+<div class="absolute left-1/2 -translate-x-1/2 top-full pt-3 hidden group-hover:block z-50">
 
-                <a href="#water-supply"
-                    class="block no-underline px-4 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary transition-colors">
-                    น้ำประปา
-                </a>
+    <div
+        class="w-[min(1000px,calc(100vw-2rem))]
+               bg-white rounded-2xl border border-outline-variant
+               shadow-xl overflow-hidden">
 
-                <a href="#clean-drinking-water"
-                    class="block no-underline px-4 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary transition-colors">
-                    น้ำดื่มสะอาด
-                </a>
+        <div class="grid grid-cols-2">
 
-                <a href="#solar-energy"
-                    class="block no-underline px-4 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary transition-colors">
-                    พลังงานแสงอาทิตย์
-                </a>
+            <!-- =========================
+                 ผลิตภัณฑ์
+            ========================== -->
+            <div class="p-6 border-r border-outline-variant">
 
-                <a href="#electric-control-panels"
-                    class="block no-underline px-4 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary transition-colors">
-                    ระบบตู้ควบคุมไฟฟ้า
-                </a>
+                <h3 class="text-lg font-semibold text-on-surface mb-4">
+                    ผลิตภัณฑ์
+                </h3>
 
-                <a href="#safe-cities"
-                    class="block no-underline px-4 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary transition-colors">
-                    เมืองปลอดภัย
-                </a>
+                <div class="grid grid-cols-2 gap-2">
 
-                <a href="#drones"
-                    class="block no-underline px-4 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary transition-colors">
-                    โดรน
-                </a>
+                    <!-- น้ำประปา -->
+                    <a href="#water-supply"
+                        class="group/item flex items-center gap-3 p-3 rounded-xl
+                               no-underline text-on-surface-variant
+                               hover:bg-surface-container-low hover:text-primary
+                               transition-all duration-200">
+                        <span class="material-symbols-outlined text-2xl shrink-0">
+                            water_drop
+                        </span>
+                        <span class="text-sm leading-tight">
+                            น้ำประปา
+                        </span>
+                    </a>
 
-                <a href="#cld-screens"
-                    class="block no-underline px-4 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary transition-colors">
-                    จอ CLD
-                </a>
+                    <!-- น้ำดื่มสะอาด -->
+                    <a href="#clean-drinking-water"
+                        class="group/item flex items-center gap-3 p-3 rounded-xl
+                               no-underline text-on-surface-variant
+                               hover:bg-surface-container-low hover:text-primary
+                               transition-all duration-200">
+                        <span class="material-symbols-outlined text-2xl shrink-0">
+                            local_drink
+                        </span>
+                        <span class="text-sm leading-tight">
+                            น้ำดื่มสะอาด
+                        </span>
+                    </a>
 
+                    <!-- พลังงานแสงอาทิตย์ -->
+                    <a href="#solar-energy"
+                        class="group/item flex items-center gap-3 p-3 rounded-xl
+                               no-underline text-on-surface-variant
+                               hover:bg-surface-container-low hover:text-primary
+                               transition-all duration-200">
+                        <span class="material-symbols-outlined text-2xl shrink-0">
+                            solar_power
+                        </span>
+                        <span class="text-sm leading-tight">
+                            พลังงานแสงอาทิตย์
+                        </span>
+                    </a>
+
+                    <!-- ระบบตู้ควบคุมไฟฟ้า -->
+                    <a href="#electric-control-panels"
+                        class="group/item flex items-center gap-3 p-3 rounded-xl
+                               no-underline text-on-surface-variant
+                               hover:bg-surface-container-low hover:text-primary
+                               transition-all duration-200">
+                        <span class="material-symbols-outlined text-2xl shrink-0">
+                            electrical_services
+                        </span>
+                        <span class="text-sm leading-tight">
+                            ระบบตู้ควบคุมไฟฟ้า
+                        </span>
+                    </a>
+
+                    <!-- เมืองปลอดภัย -->
+                    <a href="#safe-cities"
+                        class="group/item flex items-center gap-3 p-3 rounded-xl
+                               no-underline text-on-surface-variant
+                               hover:bg-surface-container-low hover:text-primary
+                               transition-all duration-200">
+                        <span class="material-symbols-outlined text-2xl shrink-0">
+                            location_city
+                        </span>
+                        <span class="text-sm leading-tight">
+                            เมืองปลอดภัย
+                        </span>
+                    </a>
+
+                    <!-- โดรน -->
+                    <a href="#drones"
+                        class="group/item flex items-center gap-3 p-3 rounded-xl
+                               no-underline text-on-surface-variant
+                               hover:bg-surface-container-low hover:text-primary
+                               transition-all duration-200">
+                        <span class="material-symbols-outlined text-2xl shrink-0">
+                            flight
+                        </span>
+                        <span class="text-sm leading-tight">
+                            โดรน
+                        </span>
+                    </a>
+
+                    <!-- จอ CLD -->
+                    <a href="#cld-screens"
+                        class="group/item flex items-center gap-3 p-3 rounded-xl
+                               no-underline text-on-surface-variant
+                               hover:bg-surface-container-low hover:text-primary
+                               transition-all duration-200">
+                        <span class="material-symbols-outlined text-2xl shrink-0">
+                            tv
+                        </span>
+                        <span class="text-sm leading-tight">
+                            จอ CLD
+                        </span>
+                    </a>
+
+                    <!-- แอร์โซล่าเซลล์ -->
+                    <a href="#solar-air-conditioner"
+                        class="group/item flex items-center gap-3 p-3 rounded-xl
+                               no-underline text-on-surface-variant
+                               hover:bg-surface-container-low hover:text-primary
+                               transition-all duration-200">
+                        <span class="material-symbols-outlined text-2xl shrink-0">
+                            ac_unit
+                        </span>
+                        <span class="text-sm leading-tight">
+                            แอร์โซล่าเซลล์
+                        </span>
+                    </a>
+
+                </div>
             </div>
+
+
+            <!-- =========================
+                 อุตสาหกรรม
+            ========================== -->
+            <div class="p-6">
+
+                <h3 class="text-lg font-semibold text-on-surface mb-4">
+                    อุตสาหกรรม
+                </h3>
+
+                <div class="grid grid-cols-2 gap-2">
+
+                    <!-- เกษตรกรรม -->
+                    <a href="#agriculture"
+                        class="group/item flex items-center gap-3 p-3 rounded-xl
+                               no-underline text-on-surface-variant
+                               hover:bg-surface-container-low hover:text-primary
+                               transition-all duration-200">
+                        <span class="material-symbols-outlined text-2xl shrink-0">
+                            agriculture
+                        </span>
+                        <span class="text-sm leading-tight">
+                            เกษตรกรรม
+                        </span>
+                    </a>
+
+                    <!-- ฟาร์ม -->
+                    <a href="#farm"
+                        class="group/item flex items-center gap-3 p-3 rounded-xl
+                               no-underline text-on-surface-variant
+                               hover:bg-surface-container-low hover:text-primary
+                               transition-all duration-200">
+                        <span class="material-symbols-outlined text-2xl shrink-0">
+                            grass
+                        </span>
+                        <span class="text-sm leading-tight">
+                            ฟาร์ม
+                        </span>
+                    </a>
+
+                    <!-- ที่พักอาศัยรายย่อย -->
+                    <a href="#residential"
+                        class="group/item flex items-center gap-3 p-3 rounded-xl
+                               no-underline text-on-surface-variant
+                               hover:bg-surface-container-low hover:text-primary
+                               transition-all duration-200">
+                        <span class="material-symbols-outlined text-2xl shrink-0">
+                            home
+                        </span>
+                        <span class="text-sm leading-tight">
+                            ที่พักอาศัยรายย่อย
+                        </span>
+                    </a>
+
+                    <!-- โซล่าเซลล์ -->
+                    <a href="#solar-cell"
+                        class="group/item flex items-center gap-3 p-3 rounded-xl
+                               no-underline text-on-surface-variant
+                               hover:bg-surface-container-low hover:text-primary
+                               transition-all duration-200">
+                        <span class="material-symbols-outlined text-2xl shrink-0">
+                            solar_power
+                        </span>
+                        <span class="text-sm leading-tight">
+                            โซล่าเซลล์
+                        </span>
+                    </a>
+
+                    <!-- สระว่ายน้ำ -->
+                    <a href="#swimming-pool"
+                        class="group/item flex items-center gap-3 p-3 rounded-xl
+                               no-underline text-on-surface-variant
+                               hover:bg-surface-container-low hover:text-primary
+                               transition-all duration-200">
+                        <span class="material-symbols-outlined text-2xl shrink-0">
+                            pool
+                        </span>
+                        <span class="text-sm leading-tight">
+                            สระว่ายน้ำ
+                        </span>
+                    </a>
+
+                    <!-- น้ำดื่มสะอาด -->
+                    <a href="#clean-drinking-water"
+                        class="group/item flex items-center gap-3 p-3 rounded-xl
+                               no-underline text-on-surface-variant
+                               hover:bg-surface-container-low hover:text-primary
+                               transition-all duration-200">
+                        <span class="material-symbols-outlined text-2xl shrink-0">
+                            local_drink
+                        </span>
+                        <span class="text-sm leading-tight">
+                            น้ำดื่มสะอาด
+                        </span>
+                    </a>
+
+                    <!-- น้ำประปา -->
+                    <a href="#water-supply"
+                        class="group/item flex items-center gap-3 p-3 rounded-xl
+                               no-underline text-on-surface-variant
+                               hover:bg-surface-container-low hover:text-primary
+                               transition-all duration-200">
+                        <span class="material-symbols-outlined text-2xl shrink-0">
+                            water_drop
+                        </span>
+                        <span class="text-sm leading-tight">
+                            น้ำประปา
+                        </span>
+                    </a>
+
+                </div>
+            </div>
+
         </div>
+    </div>
+</div>
+
     </div>
 
     <a class="no-underline text-on-surface-variant py-[8px] px-[16px] rounded-full transition-all duration-200 hover:bg-surface-container-low hover:-translate-y-0.5"
@@ -285,7 +497,7 @@ function closeAllMobileMenu() {
 <!-- Hero Section -->
 <section class="relative w-full aspect-[16/9] md:aspect-[21/9] flex items-center justify-center overflow-hidden bg-surface-container-low">
 <div class="absolute inset-0 z-0">
-<div class="bg-cover bg-center w-full h-full" data-alt="Hero Image" style="background-image: url('https://cdn.phototourl.com/member/2026-09-04-e6fb2558-8b57-4550-b1eb-396aa89d918b.jpg')"></div>
+<div class="bg-cover bg-center w-full h-full" data-alt="Hero Image" style="background-image: url('https://cdn.phototourl.com/member/2026-09-07-d6205b83-4040-469e-b861-c798ba2d221a.jpg')"></div>
 </div>
 </section>
 <!-- Partner Logos Strip  -->
@@ -406,7 +618,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'น้ำประปา (Water Supply)',
         '',
         'https://cdn.phototourl.com/free/2026-09-05-e9dadaa9-c4c3-4daf-8cc3-1db07e7d1346.jpg'
-    )" class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:ring-[#41A85F] hover:ring-1 hover:bg-[#EAF6EE] transition-colors">
+    )" class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:ring-[#054097] hover:ring-1 hover:bg-[#8FBBFB] transition-colors">
     ดูรายละเอียด
 </button>
 </div>
@@ -424,7 +636,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'น้ำประปา (Water Supply)',
         '',
         'https://cdn.phototourl.com/free/2026-09-05-6e33a887-1a29-4397-a088-e61bed325f50.jpg'
-    )" class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:ring-[#41A85F] hover:ring-1 hover:bg-[#EAF6EE] transition-colors">
+    )" class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:ring-[#054097] hover:ring-1 hover:bg-[#8FBBFB] transition-colors">
     ดูรายละเอียด
 </button>
 </div>
@@ -442,7 +654,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'น้ำประปา (Water Supply)',
         '',
         'https://placehold.co/100x100/png?text=LOGO'
-    )" class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:ring-[#41A85F] hover:ring-1 hover:bg-[#EAF6EE] transition-colors">
+    )" class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:ring-[#054097] hover:ring-1 hover:bg-[#8FBBFB] transition-colors">
     ดูรายละเอียด
 </button>
 </div>
@@ -460,7 +672,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'น้ำประปา (Water Supply)',
         '',
         'https://placehold.co/100x100/png?text=LOGO'
-    )" class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:ring-[#41A85F] hover:ring-1 hover:bg-[#EAF6EE] transition-colors">
+    )" class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:ring-[#054097] hover:ring-1 hover:bg-[#8FBBFB] transition-colors">
     ดูรายละเอียด
 </button>
 </div>
@@ -478,7 +690,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'น้ำประปา (Water Supply)',
         '',
         'https://placehold.co/100x100/png?text=LOGO'
-    )" class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:ring-[#41A85F] hover:ring-1 hover:bg-[#EAF6EE] transition-colors">
+    )" class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:ring-[#054097] hover:ring-1 hover:bg-[#8FBBFB] transition-colors">
     ดูรายละเอียด
 </button>
 </div>
@@ -505,7 +717,7 @@ document.addEventListener('DOMContentLoaded', () => {
         '',
         'https://cdn.phototourl.com/member/2026-09-05-e0b4507e-de56-43ef-968e-d8141527b5a4.jpg'
     )"
-    class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:ring-[#41A85F] hover:ring-1 hover:bg-[#EAF6EE] transition-colors">
+    class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:ring-[#054097] hover:ring-1 hover:bg-[#8FBBFB] transition-colors">
     ดูรายละเอียด
 </button>
 </div>
@@ -525,7 +737,7 @@ document.addEventListener('DOMContentLoaded', () => {
         '.',
         'https://placehold.co/100x100/png?text=LOGO'
     )"
-    class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:ring-[#41A85F] hover:ring-1 hover:bg-[#EAF6EE] transition-colors">
+    class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:ring-[#054097] hover:ring-1 hover:bg-[#8FBBFB] transition-colors">
     ดูรายละเอียด
 </button>
 </div>
@@ -552,7 +764,7 @@ document.addEventListener('DOMContentLoaded', () => {
         '',
         'https://cdn.phototourl.com/free/2026-09-05-cea35dfa-7723-4b65-81ea-742a547a952d.jpg'
     )"
-    class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:ring-[#41A85F] hover:ring-1 hover:bg-[#EAF6EE] transition-colors">
+    class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:ring-[#054097] hover:ring-1 hover:bg-[#8FBBFB] transition-colors">
     ดูรายละเอียด
 </button>
 </div>
@@ -572,7 +784,7 @@ document.addEventListener('DOMContentLoaded', () => {
         '',
         'https://placehold.co/100x100/png?text=LOGO'
     )"
-    class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:ring-[#41A85F] hover:ring-1 hover:bg-[#EAF6EE] transition-colors">
+    class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:ring-[#054097] hover:ring-1 hover:bg-[#8FBBFB] transition-colors">
     ดูรายละเอียด
 </button>
 </div>
@@ -592,7 +804,7 @@ document.addEventListener('DOMContentLoaded', () => {
         '',
         'https://placehold.co/100x100/png?text=LOGO'
     )"
-    class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:ring-[#41A85F] hover:ring-1 hover:bg-[#EAF6EE] transition-colors">
+    class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:ring-[#054097] hover:ring-1 hover:bg-[#8FBBFB] transition-colors">
     ดูรายละเอียด
 </button>
 </div>
@@ -612,7 +824,7 @@ document.addEventListener('DOMContentLoaded', () => {
         '',
         'https://placehold.co/100x100/png?text=LOGO'
     )"
-    class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:ring-[#41A85F] hover:ring-1 hover:bg-[#EAF6EE] transition-colors">
+    class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:ring-[#054097] hover:ring-1 hover:bg-[#8FBBFB] transition-colors">
     ดูรายละเอียด
 </button>
 </div>
@@ -640,7 +852,7 @@ document.addEventListener('DOMContentLoaded', () => {
         '',
         'https://cdn.phototourl.com/free/2026-09-05-a59aa131-05cf-40e8-b650-a220322d511d.png'
     )"
-    class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:ring-[#41A85F] hover:ring-1 hover:bg-[#EAF6EE] transition-colors">
+    class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:ring-[#054097] hover:ring-1 hover:bg-[#8FBBFB] transition-colors">
     ดูรายละเอียด
 </button>
 </div>
@@ -660,7 +872,7 @@ document.addEventListener('DOMContentLoaded', () => {
         '*******************',
         'https://placehold.co/100x100/png?text=LOGO'
     )"
-    class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:ring-[#41A85F] hover:ring-1 hover:bg-[#EAF6EE] transition-colors">
+    class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:ring-[#054097] hover:ring-1 hover:bg-[#8FBBFB] transition-colors">
     ดูรายละเอียด
 </button>
 </div>
@@ -680,7 +892,7 @@ document.addEventListener('DOMContentLoaded', () => {
         '',
         'https://placehold.co/100x100/png?text=LOGO'
     )"
-    class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:ring-[#41A85F] hover:ring-1 hover:bg-[#EAF6EE] transition-colors">
+    class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:ring-[#054097] hover:ring-1 hover:bg-[#8FBBFB] transition-colors">
     ดูรายละเอียด
 </button>
 </div>
@@ -700,7 +912,7 @@ document.addEventListener('DOMContentLoaded', () => {
         '',
         'https://placehold.co/100x100/png?text=LOGO'
     )"
-    class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:ring-[#41A85F] hover:ring-1 hover:bg-[#EAF6EE] transition-colors">
+    class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:ring-[#054097] hover:ring-1 hover:bg-[#8FBBFB] transition-colors">
     ดูรายละเอียด
 </button>
 </div>
@@ -728,7 +940,7 @@ document.addEventListener('DOMContentLoaded', () => {
         '',
         'https://placehold.co/100x100/png?text=LOGO'
     )"
-    class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:ring-[#41A85F] hover:ring-1 hover:bg-[#EAF6EE] transition-colors">
+    class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:ring-[#054097] hover:ring-1 hover:bg-[#8FBBFB] transition-colors">
     ดูรายละเอียด
 </button>
 </div>
@@ -756,7 +968,7 @@ document.addEventListener('DOMContentLoaded', () => {
         '',
         'https://placehold.co/100x100/png?text=LOGO'
     )"
-    class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:ring-[#41A85F] hover:ring-1 hover:bg-[#EAF6EE] transition-colors">
+    class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:ring-[#054097] hover:ring-1 hover:bg-[#8FBBFB] transition-colors">
     ดูรายละเอียด
 </button>
 </div>
@@ -784,7 +996,7 @@ document.addEventListener('DOMContentLoaded', () => {
         '',
         'https://placehold.co/100x100/png?text=LOGO'
     )"
-    class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:ring-[#41A85F] hover:ring-1 hover:bg-[#EAF6EE] transition-colors">
+    class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:ring-[#054097] hover:ring-1 hover:bg-[#8FBBFB] transition-colors">
     ดูรายละเอียด
 </button>
 </div>
@@ -944,7 +1156,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </main>
 
 <!-- Footer -->
-<footer class="bg-[#0b8520] w-full py-lg sm:py-xl border-t border-white/10">
+<footer class="bg-[#001F4D] w-full py-lg sm:py-xl border-t border-white/10">
     <div class="max-w-container-max mx-auto px-sm sm:px-gutter">
 
         <!-- Footer Main -->
