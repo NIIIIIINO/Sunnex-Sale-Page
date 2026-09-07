@@ -100,12 +100,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
 </head>
-<body class="bg-background text-on-background font-body-md antialiased pt-16">
+<body class="bg-background text-on-background font-body-md antialiased ">
 <!-- TopNavBar -->
-<header class="bg-surface-container-lowest border-b border-outline-variant shadow-sm fixed top-0 w-full z-50">
+<header id="mainHeader" class="bg-transparent border-b border-transparent fixed top-0 w-full z-50 transition-all duration-300">
 <div class="flex justify-between items-center h-16 px-gutter max-w-container-max mx-auto">
 <div class="flex items-center gap-sm cursor-pointer">
-<img alt="Sunnex Technology Logo" class="h-8 w-auto filter invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCb3U2tBCGtImqKfD8arGPDkzyNlA7nOxGNAYN292iM0XyONxkqsJ75iZP1VWDK4Ymp83JhD-0A4iY2QJ5ILOeZkAA8LNFa4B6-suwqNYa5YlAHrwASTTCy_Ps398AZk6_c2o21iOGMjmj0HcMz-g-z3xEcxEWv4NoGBVAGnbOAugB5lywr2XI03euQ40PyshSfqmwyJhuOFKTcCJ0qY-RfP0dA2t6wCX0wgVVz_tAwbKH0y8Rkr74A3GfF4ym8Vwj3lw">
+<img alt="Sunnex Technology Logo" class="h-14 w-auto filter invert" src="https://cdn.phototourl.com/free/2026-09-02-51104703-fa09-4411-91a1-76524803cf27.png">
 </div>
 
 <nav class="hidden md:flex items-center gap-md">
@@ -401,42 +401,174 @@
 </button>
 
 <!-- Mobile Navigation Menu Panel -->
-<div id="mobileMenu" class="hidden md:hidden fixed top-16 left-0 w-full max-h-[calc(100vh-4rem)] overflow-y-auto bg-surface-container-lowest border-b border-outline-variant shadow-xl z-40">
+<div id="mobileMenu"
+    class="hidden md:hidden fixed top-16 left-0 w-full max-h-[calc(100vh-4rem)]
+           overflow-y-auto bg-surface-container-lowest border-b
+           border-outline-variant shadow-xl z-40">
+
     <div class="px-gutter py-4 flex flex-col gap-1">
-        
-        <!-- Dropdown Accordion: ผลิตภัณฑ์ -->
+
+        <!-- ================= ผลิตภัณฑ์ ================= -->
         <div class="border-b border-outline-variant/60 pb-1">
-            <button onclick="toggleMobileDropdown()" 
-                class="w-full flex items-center justify-between py-3 text-left font-medium text-on-surface hover:text-primary transition-colors">
+
+            <button onclick="toggleMobileDropdown('product')"
+                class="w-full flex items-center justify-between py-3
+                       text-left font-medium text-on-surface
+                       hover:text-primary transition-colors">
+
                 <span>ผลิตภัณฑ์</span>
-                <span id="mobileDropdownArrow" class="text-xs transition-transform duration-200">▼</span>
+
+                <span id="productArrow"
+                    class="text-xs transition-transform duration-200">
+                    ▼
+                </span>
             </button>
-            
-            <!-- รายการสินค้าย่อย -->
-            <div id="mobileDropdownList" class="hidden flex-col gap-1 pl-4 pb-2">
-                <a href="#water-supply" onclick="closeAllMobileMenu()" class="block py-2 text-sm text-on-surface-variant hover:text-primary transition-colors">น้ำประปา</a>
-                <a href="#clean-drinking-water" onclick="closeAllMobileMenu()" class="block py-2 text-sm text-on-surface-variant hover:text-primary transition-colors">น้ำดื่มสะอาด</a>
-                <a href="#solar-energy" onclick="closeAllMobileMenu()" class="block py-2 text-sm text-on-surface-variant hover:text-primary transition-colors">พลังงานแสงอาทิตย์</a>
-                <a href="#electric-control-panels" onclick="closeAllMobileMenu()" class="block py-2 text-sm text-on-surface-variant hover:text-primary transition-colors">ระบบตู้ควบคุมไฟฟ้า</a>
-                <a href="#safe-cities" onclick="closeAllMobileMenu()" class="block py-2 text-sm text-on-surface-variant hover:text-primary transition-colors">เมืองปลอดภัย</a>
-                <a href="#drones" onclick="closeAllMobileMenu()" class="block py-2 text-sm text-on-surface-variant hover:text-primary transition-colors">โดรน</a>
-                <a href="#cld-screens" onclick="closeAllMobileMenu()" class="block py-2 text-sm text-on-surface-variant hover:text-primary transition-colors">จอ CLD</a>
+
+            <div id="productDropdown"
+                class="hidden flex-col gap-1 pl-4 pb-2">
+
+                <a href="#water-supply" onclick="closeAllMobileMenu()"
+                    class="block py-2 text-sm text-on-surface-variant
+                           hover:text-primary transition-colors">
+                    น้ำประปา
+                </a>
+
+                <a href="#clean-drinking-water" onclick="closeAllMobileMenu()"
+                    class="block py-2 text-sm text-on-surface-variant
+                           hover:text-primary transition-colors">
+                    น้ำดื่มสะอาด
+                </a>
+
+                <a href="#solar-energy" onclick="closeAllMobileMenu()"
+                    class="block py-2 text-sm text-on-surface-variant
+                           hover:text-primary transition-colors">
+                    พลังงานแสงอาทิตย์
+                </a>
+
+                <a href="#electric-control-panels" onclick="closeAllMobileMenu()"
+                    class="block py-2 text-sm text-on-surface-variant
+                           hover:text-primary transition-colors">
+                    ระบบตู้ควบคุมไฟฟ้า
+                </a>
+
+                <a href="#safe-cities" onclick="closeAllMobileMenu()"
+                    class="block py-2 text-sm text-on-surface-variant
+                           hover:text-primary transition-colors">
+                    เมืองปลอดภัย
+                </a>
+
+                <a href="#drones" onclick="closeAllMobileMenu()"
+                    class="block py-2 text-sm text-on-surface-variant
+                           hover:text-primary transition-colors">
+                    โดรน
+                </a>
+
+                <a href="#cld-screens" onclick="closeAllMobileMenu()"
+                    class="block py-2 text-sm text-on-surface-variant
+                           hover:text-primary transition-colors">
+                    จอ CLD
+                </a>
+
+                <a href="#solar-air-conditioner" onclick="closeAllMobileMenu()"
+                    class="block py-2 text-sm text-on-surface-variant
+                           hover:text-primary transition-colors">
+                    แอร์โซล่าเซลล์
+                </a>
+
             </div>
         </div>
 
-        <!-- ติดต่อเรา -->
-        <a href="#contact" onclick="closeAllMobileMenu()" 
-           class="block py-3 font-medium text-on-surface hover:text-primary border-b border-outline-variant/60 transition-colors">
+
+        <!-- ================= อุตสาหกรรม ================= -->
+        <div class="border-b border-outline-variant/60 pb-1">
+
+            <button onclick="toggleMobileDropdown('industry')"
+                class="w-full flex items-center justify-between py-3
+                       text-left font-medium text-on-surface
+                       hover:text-primary transition-colors">
+
+                <span>อุตสาหกรรม</span>
+
+                <span id="industryArrow"
+                    class="text-xs transition-transform duration-200">
+                    ▼
+                </span>
+            </button>
+
+            <div id="industryDropdown"
+                class="hidden flex-col gap-1 pl-4 pb-2">
+
+                <a href="#agriculture" onclick="closeAllMobileMenu()"
+                    class="block py-2 text-sm text-on-surface-variant
+                           hover:text-primary transition-colors">
+                    เกษตรกรรม
+                </a>
+
+                <a href="#farm" onclick="closeAllMobileMenu()"
+                    class="block py-2 text-sm text-on-surface-variant
+                           hover:text-primary transition-colors">
+                    ฟาร์ม
+                </a>
+
+                <a href="#residential" onclick="closeAllMobileMenu()"
+                    class="block py-2 text-sm text-on-surface-variant
+                           hover:text-primary transition-colors">
+                    ที่พักอาศัยรายย่อย
+                </a>
+
+                <a href="#solar-cell" onclick="closeAllMobileMenu()"
+                    class="block py-2 text-sm text-on-surface-variant
+                           hover:text-primary transition-colors">
+                    โซล่าเซลล์
+                </a>
+
+                <a href="#swimming-pool" onclick="closeAllMobileMenu()"
+                    class="block py-2 text-sm text-on-surface-variant
+                           hover:text-primary transition-colors">
+                    สระว่ายน้ำ
+                </a>
+
+                <a href="#clean-drinking-water" onclick="closeAllMobileMenu()"
+                    class="block py-2 text-sm text-on-surface-variant
+                           hover:text-primary transition-colors">
+                    น้ำดื่มสะอาด
+                </a>
+
+                <a href="#water-supply" onclick="closeAllMobileMenu()"
+                    class="block py-2 text-sm text-on-surface-variant
+                           hover:text-primary transition-colors">
+                    น้ำประปา
+                </a>
+
+            </div>
+        </div>
+
+
+        <!-- ================= ติดต่อเรา ================= -->
+        <a href="#contact"
+            onclick="closeAllMobileMenu()"
+            class="block py-3 font-medium text-on-surface
+                   hover:text-primary border-b border-outline-variant/60
+                   transition-colors">
             ติดต่อเรา
         </a>
 
-        <!-- ปุ่ม LINE สไตล์เดียวกับ Desktop -->
+
+        <!-- ================= LINE ================= -->
         <div class="pt-3 pb-1">
-            <a href="https://line.me/ti/p/~@Thaisolarcell" 
-               target="_blank" 
-               rel="noopener"
-               class="no-underline bg-[#39CD00] text-white font-medium py-2.5 px-4 rounded-full flex items-center justify-center gap-2 shadow-sm hover:bg-[#2B9403] active:scale-[0.99] transition-all">
-                <span class="material-symbols-outlined text-[20px]">chat</span>
+            <a href="https://line.me/ti/p/~@Thaisolarcell"
+                target="_blank"
+                rel="noopener"
+                class="no-underline bg-[#39CD00] text-white font-medium
+                       py-2.5 px-4 rounded-full flex items-center
+                       justify-center gap-2 shadow-sm
+                       hover:bg-[#2B9403] active:scale-[0.99]
+                       transition-all">
+
+                <span class="material-symbols-outlined text-[20px]">
+                    chat
+                </span>
+
                 LINE ติดต่อเรา
             </a>
         </div>
@@ -462,24 +594,70 @@ function toggleMobileMenu() {
     }
 }
 
-function toggleMobileDropdown() {
-    const list = document.getElementById('mobileDropdownList');
-    const arrow = document.getElementById('mobileDropdownArrow');
-    
-    list.classList.toggle('hidden');
-    list.classList.toggle('flex');
-    arrow.classList.toggle('rotate-180');
-}
+function toggleMobileDropdown(type) {
 
+    const product = document.getElementById('productDropdown');
+    const industry = document.getElementById('industryDropdown');
+
+    const productArrow = document.getElementById('productArrow');
+    const industryArrow = document.getElementById('industryArrow');
+
+    if (type === 'product') {
+
+        product.classList.toggle('hidden');
+        product.classList.toggle('flex');
+
+        productArrow.classList.toggle('rotate-180');
+
+        // ปิดอุตสาหกรรม
+        industry.classList.add('hidden');
+        industry.classList.remove('flex');
+        industryArrow.classList.remove('rotate-180');
+
+    } else if (type === 'industry') {
+
+        industry.classList.toggle('hidden');
+        industry.classList.toggle('flex');
+
+        industryArrow.classList.toggle('rotate-180');
+
+        // ปิดผลิตภัณฑ์
+        product.classList.add('hidden');
+        product.classList.remove('flex');
+        productArrow.classList.remove('rotate-180');
+    }
+}
+    
 function closeAllMobileMenu() {
+
     const menu = document.getElementById('mobileMenu');
     const iconOpen = document.getElementById('menuIconOpen');
     const iconClose = document.getElementById('menuIconClose');
-    
+
+    const product = document.getElementById('productDropdown');
+    const industry = document.getElementById('industryDropdown');
+
+    const productArrow = document.getElementById('productArrow');
+    const industryArrow = document.getElementById('industryArrow');
+
     menu.classList.add('hidden');
+
     iconOpen.classList.remove('hidden');
     iconClose.classList.add('hidden');
+
+    // ปิด dropdown ทั้งหมด
+    product.classList.add('hidden');
+    product.classList.remove('flex');
+
+    industry.classList.add('hidden');
+    industry.classList.remove('flex');
+
+    productArrow.classList.remove('rotate-180');
+    industryArrow.classList.remove('rotate-180');
 }
+    
+    iconOpen.classList.remove('hidden');
+    iconClose.classList.add('hidden');
 </script>
 </header>
 <div id="mobileMenu" class="hidden md:hidden flex-col bg-surface-container-lowest border-b border-outline-variant fixed top-16 left-0 w-full z-40 shadow-lg">
@@ -495,10 +673,11 @@ function closeAllMobileMenu() {
 </div>
 <main>
 <!-- Hero Section -->
-<section class="relative w-full aspect-[16/9] md:aspect-[21/9] flex items-center justify-center overflow-hidden bg-surface-container-low">
-<div class="absolute inset-0 z-0">
-<div class="bg-cover bg-center w-full h-full" data-alt="Hero Image" style="background-image: url('https://cdn.phototourl.com/member/2026-09-07-d6205b83-4040-469e-b861-c798ba2d221a.jpg')"></div>
-</div>
+<section class="relative w-full aspect-[16/9] flex items-center justify-center overflow-hidden">
+    <div
+        class="absolute inset-0 bg-cover bg-center"
+        style="background-image: url('https://cdn.phototourl.com/member/2026-09-07-d6205b83-4040-469e-b861-c798ba2d221a.jpg')">
+    </div>
 </section>
 <!-- Partner Logos Strip  -->
 <section class="py-lg bg-surface-container-lowest border-t border-outline-variant overflow-hidden" id="features">
@@ -542,6 +721,7 @@ function closeAllMobileMenu() {
     from { transform: translateX(0); }
     to { transform: translateX(-50%); }
 }
+
 </style>
 
 <script>
@@ -1156,98 +1336,153 @@ document.addEventListener('DOMContentLoaded', () => {
 </main>
 
 <!-- Footer -->
-<footer class="bg-[#001F4D] w-full py-lg sm:py-xl border-t border-white/10">
-    <div class="max-w-container-max mx-auto px-sm sm:px-gutter">
+<footer class="bg-[#001F4D] w-full pt-lg sm:pt-xl pb-sm sm:pb-md border-t border-white/10">
+    <div class="w-full px-sm sm:px-gutter">
 
         <!-- Footer Main -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-md sm:gap-lg lg:gap-xl items-start">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-md sm:gap-lg lg:gap-xl items-start">
 
-            <!-- Logo -->
-            <div class="flex items-start">
-                <img
-                    src="https://cdn.phototourl.com/free/2026-09-02-51104703-fa09-4411-91a1-76524803cf27.png"
-                    alt="Sunnex Technology Logo"
-                    class="h-14 sm:h-16 md:h-20 lg:h-28 w-auto object-contain"
-                >
-            </div>
+    <!-- Logo -->
+    <div class="flex items-start justify-center">
+        <img
+            src="https://cdn.phototourl.com/free/2026-09-02-51104703-fa09-4411-91a1-76524803cf27.png"
+            alt="Sunnex Technology Logo"
+            class="h-14 sm:h-16 md:h-20 lg:h-28 w-auto object-contain"
+        >
+    </div>
 
 
-            <!-- Products -->
-            <div class="flex flex-col gap-xs sm:gap-sm">
-                <h4 class="text-[16px] sm:text-[18px] md:text-[20px] lg:text-headline-md text-white font-semibold">
-                    
-                    <a href="#catalog"
-                       class="text-white no-underline hover:opacity-80 transition-opacity"
-                    >
-                        ผลิตภัณฑ์
-                    </a>
-                </h4>
+    <!-- ผลิตภัณฑ์ -->
+    <div class="flex flex-col gap-xs sm:gap-sm">
 
-                <div class="grid grid-cols-2 gap-x-md sm:gap-x-lg gap-y-1 sm:gap-y-2">
-                    <a href="#water-supply" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:text-white transition-all">
-                        น้ำประปา
-                    </a>
-                    <a href="#clean-drinking-water" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:text-white transition-all">
-                        น้ำดื่มสะอาด
-                    </a>
-                    <a href="#solar-energy" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:text-white transition-all">
-                        พลังงานแสงอาทิตย์
-                    </a>
-                    <a href="#electric-control-panels" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:text-white transition-all">
-                        ระบบตู้ควบคุมไฟฟ้า
-                    </a>
-                    <a href="#safe-cities" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:text-white transition-all">
-                        เมืองปลอดภัย
-                    </a>
-                    <a href="#drones" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:text-white transition-all">
-                        โดรน
-                    </a>
-                    <a href="#cld-screens" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:text-white transition-all">
-                        จอ CLD
-                    </a>
-                </div>
-            </div>
+        <h4 class="text-[16px] sm:text-[18px] md:text-[20px] lg:text-headline-md text-white font-semibold">
+            <a href="#catalog"
+               class="text-white no-underline hover:opacity-80 transition-opacity">
+                ผลิตภัณฑ์
+            </a>
+        </h4>
 
-            <!-- Contact Information -->
-            <div class="flex flex-col gap-xs sm:gap-sm">
+        <div class="grid grid-cols-2 gap-x-md sm:gap-x-lg gap-y-1 sm:gap-y-2">
 
-                <h4 class="text-[16px] sm:text-[18px] md:text-[20px] lg:text-headline-md text-white font-semibold">
-                    ข้อมูลติดต่อ
-                </h4>
+            <a href="#water-supply" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity">
+                น้ำประปา
+            </a>
 
-                <!-- Phone -->
-                
-                <a    href="tel:+66621935549"
-                    class="flex items-center gap-xs sm:gap-sm text-white no-underline hover:opacity-80 transition-opacity"
-                >
-                    <span class="material-symbols-outlined text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px]">
-                        phone
-                    </span>
+            <a href="#clean-drinking-water" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity">
+                น้ำดื่มสะอาด
+            </a>
 
-                    <span class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-body-md">
-                        โทร +66 621935549
-                    </span>
-                </a>
+            <a href="#solar-energy" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity">
+                พลังงานแสงอาทิตย์
+            </a>
 
-                <!-- LINE -->
-                
-                <a    href="https://line.me/ti/p/~@Thaisolarcell"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="flex items-center gap-xs sm:gap-sm text-white no-underline hover:opacity-80 transition-opacity"
-                >
-                    <span class="material-symbols-outlined text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px]">
-                        chat
-                    </span>
+            <a href="#electric-control-panels" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity">
+                ระบบตู้ควบคุมไฟฟ้า
+            </a>
 
-                    <span class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-body-md">
-                        LINE @Thaisolarcell
-                    </span>
-                </a>
+            <a href="#safe-cities" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity">
+                เมืองปลอดภัย
+            </a>
 
-            </div>
+            <a href="#drones" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity">
+                โดรน
+            </a>
+
+            <a href="#cld-screens" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity">
+                จอ CLD
+            </a>
+
+            <a href="#solar-air-conditioner" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity">
+                แอร์โซล่าเซลล์
+            </a>
 
         </div>
+    </div>
+
+
+    <!-- อุตสาหกรรม -->
+    <div class="flex flex-col gap-xs sm:gap-sm">
+
+        <h4 class="text-[16px] sm:text-[18px] md:text-[20px] lg:text-headline-md text-white font-semibold">
+    <a href="#catalog"
+       class="text-white no-underline hover:opacity-80 transition-opacity">
+        อุตสาหกรรม
+    </a>
+</h4>
+
+        <div class="grid grid-cols-2 gap-x-md sm:gap-x-lg gap-y-1 sm:gap-y-2">
+
+            <a href="#agriculture" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity">
+                เกษตรกรรม
+            </a>
+
+            <a href="#farm" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity">
+                ฟาร์ม
+            </a>
+
+            <a href="#residential" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity">
+                ที่พักอาศัยรายย่อย
+            </a>
+
+            <a href="#solar-cell" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity">
+                โซล่าเซลล์
+            </a>
+
+            <a href="#swimming-pool" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity">
+                สระว่ายน้ำ
+            </a>
+
+            <a href="#clean-drinking-water" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity">
+                น้ำดื่มสะอาด
+            </a>
+
+            <a href="#water-supply" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity">
+                น้ำประปา
+            </a>
+
+        </div>
+    </div>
+
+
+    <!-- ข้อมูลติดต่อ -->
+    <div class="flex flex-col gap-xs sm:gap-sm">
+
+        <h4 class="text-[16px] sm:text-[18px] md:text-[20px] lg:text-headline-md text-white font-semibold">
+            ข้อมูลติดต่อ
+        </h4>
+
+        <!-- Phone -->
+        <a href="tel:+66621935549"
+           class="flex items-center gap-xs sm:gap-sm text-white no-underline hover:opacity-80 transition-opacity">
+
+            <span class="material-symbols-outlined text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px]">
+                phone
+            </span>
+
+            <span class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-body-md">
+                โทร +66 621935549
+            </span>
+        </a>
+
+
+        <!-- LINE -->
+        <a href="https://line.me/ti/p/~@Thaisolarcell"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="flex items-center gap-xs sm:gap-sm text-white no-underline hover:opacity-80 transition-opacity">
+
+            <span class="material-symbols-outlined text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px]">
+                chat
+            </span>
+
+            <span class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-body-md">
+                LINE @Thaisolarcell
+            </span>
+        </a>
+
+    </div>
+
+</div>
 
 
         <!-- Copyright -->
@@ -1502,5 +1737,19 @@ function closeBrochure(event) {
             backToTop.classList.add('opacity-0', 'invisible', 'translate-y-4');
         }
     });
+</script>
+
+<!--Script Scroll-->
+<script>
+window.addEventListener('scroll', function() {
+    const header = document.getElementById('mainHeader');
+    if (window.scrollY > 50) {
+        header.classList.remove('bg-transparent', 'border-transparent');
+        header.classList.add('bg-surface-container-lowest', 'border-outline-variant', 'shadow-sm');
+    } else {
+        header.classList.add('bg-transparent', 'border-transparent');
+        header.classList.remove('bg-surface-container-lowest', 'border-outline-variant', 'shadow-sm');
+    }
+});
 </script>
 </body></html>
