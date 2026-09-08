@@ -114,7 +114,7 @@
 
         <button
             class="no-underline text-on-surface-variant py-[8px] px-[16px] rounded-full transition-all duration-200 hover:bg-surface-container-low hover:-translate-y-0.5 flex items-center gap-1">
-            <a href="#catalog" class="no-underline">ผลิตภัณฑ์</a>
+            <span>ผลิตภัณฑ์</span>
             <span class="text-xs">▼</span>
         </button>
 
@@ -134,7 +134,9 @@
             <div class="p-6 border-r border-outline-variant">
 
                 <h3 class="text-lg font-semibold text-on-surface mb-4">
-                    ผลิตภัณฑ์
+                    <a href="#product-section" class="no-underline text-on-surface hover:text-primary transition-colors">
+                        ผลิตภัณฑ์
+                    </a>
                 </h3>
 
                 <div class="grid grid-cols-2 gap-2">
@@ -251,7 +253,7 @@
                         </span>
                     </a>
 
-                    <!-- สารกรอง -->
+                    <!-- สารกรองและบริการ -->
                     <a href="#filter-media"
                         class="group/item flex items-center gap-3 p-3 rounded-xl
                                no-underline text-on-surface-variant
@@ -261,7 +263,7 @@
                             filter_alt
                         </span>
                         <span class="text-sm leading-tight">
-                            สารกรอง
+                            สารกรองและบริการ
                         </span>
                     </a>
 
@@ -275,7 +277,9 @@
             <div class="p-6">
 
                 <h3 class="text-lg font-semibold text-on-surface mb-4">
-                    อุตสาหกรรม
+                    <a href="#industry-section" class="no-underline text-on-surface hover:text-primary transition-colors">
+                        อุตสาหกรรม
+                    </a>
                 </h3>
 
                 <div class="grid grid-cols-2 gap-2">
@@ -492,7 +496,7 @@
                 <a href="#filter-media" onclick="closeAllMobileMenu()"
                     class="block py-2 text-sm text-on-surface-variant
                            hover:text-primary transition-colors">
-                    สารกรอง
+                    สารกรองและบริการ
                 </a>
 
             </div>
@@ -689,7 +693,7 @@ function closeAllMobileMenu() {
     <a href="#drones" onclick="toggleMobileMenu()" class="block px-gutter py-3 text-on-surface-variant border-b border-outline-variant">โดรน</a>
     <a href="#cld-screens" onclick="toggleMobileMenu()" class="block px-gutter py-3 text-on-surface-variant border-b border-outline-variant">จอ CLD</a>
     <a href="#solar-air-conditioner" onclick="toggleMobileMenu()" class="block px-gutter py-3 text-on-surface-variant border-b border-outline-variant">แอร์โซล่าเซลล์</a>
-    <a href="#filter-media" onclick="toggleMobileMenu()" class="block px-gutter py-3 text-on-surface-variant border-b border-outline-variant">สารกรอง</a>
+    <a href="#filter-media" onclick="toggleMobileMenu()" class="block px-gutter py-3 text-on-surface-variant border-b border-outline-variant">สารกรองและบริการ</a>
     <a href="#contact" onclick="toggleMobileMenu()" class="block px-gutter py-3 text-on-surface-variant border-b border-outline-variant">ติดต่อเรา</a>
     <a href="https://line.me/ti/p/~@Thaisolarcell" target="_blank" rel="noopener" class="block px-gutter py-3 text-[#39CD00] font-medium">ติดต่อทาง LINE</a>
 </div>
@@ -804,7 +808,7 @@ document.addEventListener('DOMContentLoaded', () => {
 <a class="px-sm py-xs sm:px-md sm:py-sm text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant hover:text-primary transition-colors" href="#drones">โดรน</a>
 <a class="px-sm py-xs sm:px-md sm:py-sm text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant hover:text-primary transition-colors" href="#cld-screens">จอCLD</a>
 <a class="px-sm py-xs sm:px-md sm:py-sm text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant hover:text-primary transition-colors" href="#solar-air-conditioner">แอร์โซล่าเซลล์</a>
-<a class="px-sm py-xs sm:px-md sm:py-sm text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant hover:text-primary transition-colors" href="#filter-media">สารกรอง</a>
+<a class="px-sm py-xs sm:px-md sm:py-sm text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant hover:text-primary transition-colors" href="#filter-media">สารกรองและบริการ</a>
 </div>
 <!-- Category 1: น้ำประปา (Water Supply) -->
 <div id="water-supply" class="mb-xl scroll-mt-24">
@@ -1237,9 +1241,9 @@ document.addEventListener('DOMContentLoaded', () => {
 </div>
 </div>
 
-<!-- Category 9: สารกรอง -->
+<!-- Category 9: สารกรองและบริการ -->
 <div id="filter-media" class="mb-xl scroll-mt-24">
-<h3 class="text-[18px] sm:text-[20px] md:text-[26px] lg:text-[30px] text-on-surface mb-md">สารกรอง</h3>
+<h3 class="text-[18px] sm:text-[20px] md:text-[26px] lg:text-[30px] text-on-surface mb-md">สารกรองและบริการ</h3>
 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-sm md:gap-md">
 
 <!-- Item 1 -->
@@ -1252,7 +1256,7 @@ document.addEventListener('DOMContentLoaded', () => {
 <button
     onclick="openProductModal(
         'สารกรองน้ำ',
-        'สารกรอง',
+        'สารกรองและบริการ',
         '',
         'https://placehold.co/100x100/png?text=LOGO'
     )"
@@ -1266,7 +1270,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </div>
 
 <!-- ================= อุตสาหกรรม ================= -->
-<div class="mt-xl mb-lg text-center">
+<div id="industry-section" class="mt-xl mb-lg text-center scroll-mt-24">
 <h2 class="font-display-lg-mobile text-display-lg-mobile md:font-display-md md:text-display-md lg:font-display-lg lg:text-display-lg text-on-surface mb-sm">อุตสาหกรรม</h2>
 <p class="font-body-lg text-[13px] sm:text-[18px] md:text-[20px] lg:text-[22px] text-on-surface-variant max-w-2xl mx-auto">โซลูชันที่เหมาะสมสำหรับแต่ละประเภทอุตสาหกรรมและการใช้งาน</p>
 </div>
@@ -1692,7 +1696,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </a>
 
             <a href="#filter-media" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity">
-                สารกรอง
+                สารกรองและบริการ
             </a>
 
         </div>
