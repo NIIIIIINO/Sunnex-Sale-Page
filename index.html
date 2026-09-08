@@ -251,6 +251,20 @@
                         </span>
                     </a>
 
+                    <!-- สารกรอง -->
+                    <a href="#filter-media"
+                        class="group/item flex items-center gap-3 p-3 rounded-xl
+                               no-underline text-on-surface-variant
+                               hover:bg-surface-container-low hover:text-primary
+                               transition-all duration-200">
+                        <span class="material-symbols-outlined text-2xl shrink-0">
+                            filter_alt
+                        </span>
+                        <span class="text-sm leading-tight">
+                            สารกรอง
+                        </span>
+                    </a>
+
                 </div>
             </div>
 
@@ -475,6 +489,12 @@
                     แอร์โซล่าเซลล์
                 </a>
 
+                <a href="#filter-media" onclick="closeAllMobileMenu()"
+                    class="block py-2 text-sm text-on-surface-variant
+                           hover:text-primary transition-colors">
+                    สารกรอง
+                </a>
+
             </div>
         </div>
 
@@ -668,6 +688,8 @@ function closeAllMobileMenu() {
     <a href="#safe-cities" onclick="toggleMobileMenu()" class="block px-gutter py-3 text-on-surface-variant border-b border-outline-variant">เมืองปลอดภัย</a>
     <a href="#drones" onclick="toggleMobileMenu()" class="block px-gutter py-3 text-on-surface-variant border-b border-outline-variant">โดรน</a>
     <a href="#cld-screens" onclick="toggleMobileMenu()" class="block px-gutter py-3 text-on-surface-variant border-b border-outline-variant">จอ CLD</a>
+    <a href="#solar-air-conditioner" onclick="toggleMobileMenu()" class="block px-gutter py-3 text-on-surface-variant border-b border-outline-variant">แอร์โซล่าเซลล์</a>
+    <a href="#filter-media" onclick="toggleMobileMenu()" class="block px-gutter py-3 text-on-surface-variant border-b border-outline-variant">สารกรอง</a>
     <a href="#contact" onclick="toggleMobileMenu()" class="block px-gutter py-3 text-on-surface-variant border-b border-outline-variant">ติดต่อเรา</a>
     <a href="https://line.me/ti/p/~@Thaisolarcell" target="_blank" rel="noopener" class="block px-gutter py-3 text-[#39CD00] font-medium">ติดต่อทาง LINE</a>
 </div>
@@ -768,9 +790,10 @@ document.addEventListener('DOMContentLoaded', () => {
 <section class="py-xl bg-surface-container" id="catalog">
 <div class="max-w-container-max mx-auto px-gutter">
 <div class="text-center mb-lg">
-<h2 class="font-display-lg-mobile text-display-lg-mobile md:font-display-md md:text-display-md lg:font-display-lg lg:text-display-lg text-on-surface mb-sm">Product Catalog</h2>
+<h2 class="font-display-lg-mobile text-display-lg-mobile md:font-display-md md:text-display-md lg:font-display-lg lg:text-display-lg text-on-surface mb-sm">ผลิตภัณฑ์และโซลูชัน</h2>
 <p class="font-body-lg text-[13px] sm:text-[18px] md:text-[20px] lg:text-[22px] text-on-surface-variant max-w-2xl mx-auto">โซลูชันด้านการจัดการน้ำที่ออกแบบมาเพื่อทุกระดับการใช้งาน</p>
 </div>
+
 <!-- Tab Navigation (Visual Only for now) -->
 <div class="flex flex-wrap justify-center gap-sm mb-lg border-b border-outline-variant pb-xs">
 <a class="px-sm py-xs sm:px-md sm:py-sm text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant hover:text-primary transition-colors" href="#water-supply">น้ำประปา</a>
@@ -780,6 +803,8 @@ document.addEventListener('DOMContentLoaded', () => {
 <a class="px-sm py-xs sm:px-md sm:py-sm text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant hover:text-primary transition-colors" href="#safe-cities">เมืองปลอดภัย</a>
 <a class="px-sm py-xs sm:px-md sm:py-sm text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant hover:text-primary transition-colors" href="#drones">โดรน</a>
 <a class="px-sm py-xs sm:px-md sm:py-sm text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant hover:text-primary transition-colors" href="#cld-screens">จอCLD</a>
+<a class="px-sm py-xs sm:px-md sm:py-sm text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant hover:text-primary transition-colors" href="#solar-air-conditioner">แอร์โซล่าเซลล์</a>
+<a class="px-sm py-xs sm:px-md sm:py-sm text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant hover:text-primary transition-colors" href="#filter-media">สารกรอง</a>
 </div>
 <!-- Category 1: น้ำประปา (Water Supply) -->
 <div id="water-supply" class="mb-xl scroll-mt-24">
@@ -1183,6 +1208,276 @@ document.addEventListener('DOMContentLoaded', () => {
 </div>
 </div>
 </div>
+
+<!-- Category 8: แอร์โซล่าเซลล์ -->
+<div id="solar-air-conditioner" class="mb-xl scroll-mt-24">
+<h3 class="text-[18px] sm:text-[20px] md:text-[26px] lg:text-[30px] text-on-surface mb-md">แอร์โซล่าเซลล์</h3>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-sm md:gap-md">
+
+<!-- Item 1 -->
+<div class="group bg-surface-container-lowest rounded-2xl border border-outline-variant overflow-hidden flex flex-col shadow-[0_8px_30px_rgba(0,0,0,0.04)] min-h-[280px] sm:min-h-[340px] md:min-h-[420px] lg:min-h-[500px]">
+<div class="flex-1 min-h-0 bg-surface-container-low relative overflow-hidden border-b-[4px] border-primary">
+<img alt="เครื่องปรับอากาศพลังงานแสงอาทิตย์" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://placehold.co/100x100/png?text=LOGO">
+</div>
+<div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
+<h3 class="text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">เครื่องปรับอากาศพลังงานแสงอาทิตย์</h3>
+<button
+    onclick="openProductModal(
+        'เครื่องปรับอากาศพลังงานแสงอาทิตย์',
+        'แอร์โซล่าเซลล์',
+        '',
+        'https://placehold.co/100x100/png?text=LOGO'
+    )"
+    class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:ring-[#054097] hover:ring-1 hover:bg-[#8FBBFB] transition-colors">
+    ดูรายละเอียด
+</button>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- Category 9: สารกรอง -->
+<div id="filter-media" class="mb-xl scroll-mt-24">
+<h3 class="text-[18px] sm:text-[20px] md:text-[26px] lg:text-[30px] text-on-surface mb-md">สารกรอง</h3>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-sm md:gap-md">
+
+<!-- Item 1 -->
+<div class="group bg-surface-container-lowest rounded-2xl border border-outline-variant overflow-hidden flex flex-col shadow-[0_8px_30px_rgba(0,0,0,0.04)] min-h-[280px] sm:min-h-[340px] md:min-h-[420px] lg:min-h-[500px]">
+<div class="flex-1 min-h-0 bg-surface-container-low relative overflow-hidden border-b-[4px] border-primary">
+<img alt="สารกรองน้ำ" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://placehold.co/100x100/png?text=LOGO">
+</div>
+<div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
+<h3 class="text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">สารกรองน้ำ</h3>
+<button
+    onclick="openProductModal(
+        'สารกรองน้ำ',
+        'สารกรอง',
+        '',
+        'https://placehold.co/100x100/png?text=LOGO'
+    )"
+    class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:ring-[#054097] hover:ring-1 hover:bg-[#8FBBFB] transition-colors">
+    ดูรายละเอียด
+</button>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- ================= อุตสาหกรรม ================= -->
+<div class="mt-xl mb-lg text-center">
+<h2 class="font-display-lg-mobile text-display-lg-mobile md:font-display-md md:text-display-md lg:font-display-lg lg:text-display-lg text-on-surface mb-sm">อุตสาหกรรม</h2>
+<p class="font-body-lg text-[13px] sm:text-[18px] md:text-[20px] lg:text-[22px] text-on-surface-variant max-w-2xl mx-auto">โซลูชันที่เหมาะสมสำหรับแต่ละประเภทอุตสาหกรรมและการใช้งาน</p>
+</div>
+
+<div class="flex flex-wrap justify-center gap-sm mb-lg border-b border-outline-variant pb-xs">
+<a class="px-sm py-xs sm:px-md sm:py-sm text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant hover:text-primary transition-colors" href="#agriculture">เกษตรกรรม</a>
+<a class="px-sm py-xs sm:px-md sm:py-sm text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant hover:text-primary transition-colors" href="#farm">ฟาร์ม</a>
+<a class="px-sm py-xs sm:px-md sm:py-sm text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant hover:text-primary transition-colors" href="#residential">ที่พักอาศัยรายย่อย</a>
+<a class="px-sm py-xs sm:px-md sm:py-sm text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant hover:text-primary transition-colors" href="#solar-cell">โซล่าเซลล์</a>
+<a class="px-sm py-xs sm:px-md sm:py-sm text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant hover:text-primary transition-colors" href="#swimming-pool">สระว่ายน้ำ</a>
+<a class="px-sm py-xs sm:px-md sm:py-sm text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant hover:text-primary transition-colors" href="#industry-drinking-water">น้ำดื่มสะอาด</a>
+<a class="px-sm py-xs sm:px-md sm:py-sm text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant hover:text-primary transition-colors" href="#industry-water-supply">น้ำประปา</a>
+</div>
+
+<!-- Industry 1: เกษตรกรรม -->
+<div id="agriculture" class="mb-xl scroll-mt-24">
+<h3 class="text-[18px] sm:text-[20px] md:text-[26px] lg:text-[30px] text-on-surface mb-md">เกษตรกรรม</h3>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-sm md:gap-md">
+
+<!-- Item 1 -->
+<div class="group bg-surface-container-lowest rounded-2xl border border-outline-variant overflow-hidden flex flex-col shadow-[0_8px_30px_rgba(0,0,0,0.04)] min-h-[280px] sm:min-h-[340px] md:min-h-[420px] lg:min-h-[500px]">
+<div class="flex-1 min-h-0 bg-surface-container-low relative overflow-hidden border-b-[4px] border-primary">
+<img alt="ระบบสำหรับการเกษตร" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://placehold.co/100x100/png?text=LOGO">
+</div>
+<div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
+<h3 class="text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">ระบบสำหรับการเกษตร</h3>
+<button
+    onclick="openProductModal(
+        'ระบบสำหรับการเกษตร',
+        'เกษตรกรรม',
+        '',
+        'https://placehold.co/100x100/png?text=LOGO'
+    )"
+    class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:ring-[#054097] hover:ring-1 hover:bg-[#8FBBFB] transition-colors">
+    ดูรายละเอียด
+</button>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- Industry 2: ฟาร์ม -->
+<div id="farm" class="mb-xl scroll-mt-24">
+<h3 class="text-[18px] sm:text-[20px] md:text-[26px] lg:text-[30px] text-on-surface mb-md">ฟาร์ม</h3>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-sm md:gap-md">
+
+<!-- Item 1 -->
+<div class="group bg-surface-container-lowest rounded-2xl border border-outline-variant overflow-hidden flex flex-col shadow-[0_8px_30px_rgba(0,0,0,0.04)] min-h-[280px] sm:min-h-[340px] md:min-h-[420px] lg:min-h-[500px]">
+<div class="flex-1 min-h-0 bg-surface-container-low relative overflow-hidden border-b-[4px] border-primary">
+<img alt="ระบบสำหรับฟาร์ม" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://placehold.co/100x100/png?text=LOGO">
+</div>
+<div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
+<h3 class="text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">ระบบสำหรับฟาร์ม</h3>
+<button
+    onclick="openProductModal(
+        'ระบบสำหรับฟาร์ม',
+        'ฟาร์ม',
+        '',
+        'https://placehold.co/100x100/png?text=LOGO'
+    )"
+    class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:ring-[#054097] hover:ring-1 hover:bg-[#8FBBFB] transition-colors">
+    ดูรายละเอียด
+</button>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- Industry 3: ที่พักอาศัยรายย่อย -->
+<div id="residential" class="mb-xl scroll-mt-24">
+<h3 class="text-[18px] sm:text-[20px] md:text-[26px] lg:text-[30px] text-on-surface mb-md">ที่พักอาศัยรายย่อย</h3>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-sm md:gap-md">
+
+<!-- Item 1 -->
+<div class="group bg-surface-container-lowest rounded-2xl border border-outline-variant overflow-hidden flex flex-col shadow-[0_8px_30px_rgba(0,0,0,0.04)] min-h-[280px] sm:min-h-[340px] md:min-h-[420px] lg:min-h-[500px]">
+<div class="flex-1 min-h-0 bg-surface-container-low relative overflow-hidden border-b-[4px] border-primary">
+<img alt="ระบบสำหรับที่พักอาศัย" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://placehold.co/100x100/png?text=LOGO">
+</div>
+<div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
+<h3 class="text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">ระบบสำหรับที่พักอาศัย</h3>
+<button
+    onclick="openProductModal(
+        'ระบบสำหรับที่พักอาศัย',
+        'ที่พักอาศัยรายย่อย',
+        '',
+        'https://placehold.co/100x100/png?text=LOGO'
+    )"
+    class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:ring-[#054097] hover:ring-1 hover:bg-[#8FBBFB] transition-colors">
+    ดูรายละเอียด
+</button>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- Industry 4: โซล่าเซลล์ -->
+<div id="solar-cell" class="mb-xl scroll-mt-24">
+<h3 class="text-[18px] sm:text-[20px] md:text-[26px] lg:text-[30px] text-on-surface mb-md">โซล่าเซลล์</h3>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-sm md:gap-md">
+
+<!-- Item 1 -->
+<div class="group bg-surface-container-lowest rounded-2xl border border-outline-variant overflow-hidden flex flex-col shadow-[0_8px_30px_rgba(0,0,0,0.04)] min-h-[280px] sm:min-h-[340px] md:min-h-[420px] lg:min-h-[500px]">
+<div class="flex-1 min-h-0 bg-surface-container-low relative overflow-hidden border-b-[4px] border-primary">
+<img alt="ระบบโซล่าเซลล์" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://placehold.co/100x100/png?text=LOGO">
+</div>
+<div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
+<h3 class="text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">ระบบโซล่าเซลล์</h3>
+<button
+    onclick="openProductModal(
+        'ระบบโซล่าเซลล์',
+        'โซล่าเซลล์',
+        '',
+        'https://placehold.co/100x100/png?text=LOGO'
+    )"
+    class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:ring-[#054097] hover:ring-1 hover:bg-[#8FBBFB] transition-colors">
+    ดูรายละเอียด
+</button>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- Industry 5: สระว่ายน้ำ -->
+<div id="swimming-pool" class="mb-xl scroll-mt-24">
+<h3 class="text-[18px] sm:text-[20px] md:text-[26px] lg:text-[30px] text-on-surface mb-md">สระว่ายน้ำ</h3>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-sm md:gap-md">
+
+<!-- Item 1 -->
+<div class="group bg-surface-container-lowest rounded-2xl border border-outline-variant overflow-hidden flex flex-col shadow-[0_8px_30px_rgba(0,0,0,0.04)] min-h-[280px] sm:min-h-[340px] md:min-h-[420px] lg:min-h-[500px]">
+<div class="flex-1 min-h-0 bg-surface-container-low relative overflow-hidden border-b-[4px] border-primary">
+<img alt="ระบบสำหรับสระว่ายน้ำ" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://placehold.co/100x100/png?text=LOGO">
+</div>
+<div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
+<h3 class="text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">ระบบสำหรับสระว่ายน้ำ</h3>
+<button
+    onclick="openProductModal(
+        'ระบบสำหรับสระว่ายน้ำ',
+        'สระว่ายน้ำ',
+        '',
+        'https://placehold.co/100x100/png?text=LOGO'
+    )"
+    class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:ring-[#054097] hover:ring-1 hover:bg-[#8FBBFB] transition-colors">
+    ดูรายละเอียด
+</button>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- Industry 6: น้ำดื่มสะอาด -->
+<div id="industry-drinking-water" class="mb-xl scroll-mt-24">
+<h3 class="text-[18px] sm:text-[20px] md:text-[26px] lg:text-[30px] text-on-surface mb-md">น้ำดื่มสะอาด</h3>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-sm md:gap-md">
+
+<!-- Item 1 -->
+<div class="group bg-surface-container-lowest rounded-2xl border border-outline-variant overflow-hidden flex flex-col shadow-[0_8px_30px_rgba(0,0,0,0.04)] min-h-[280px] sm:min-h-[340px] md:min-h-[420px] lg:min-h-[500px]">
+<div class="flex-1 min-h-0 bg-surface-container-low relative overflow-hidden border-b-[4px] border-primary">
+<img alt="ระบบน้ำดื่มสะอาด" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://placehold.co/100x100/png?text=LOGO">
+</div>
+<div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
+<h3 class="text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">ระบบน้ำดื่มสะอาด</h3>
+<button
+    onclick="openProductModal(
+        'ระบบน้ำดื่มสะอาด',
+        'น้ำดื่มสะอาด',
+        '',
+        'https://placehold.co/100x100/png?text=LOGO'
+    )"
+    class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:ring-[#054097] hover:ring-1 hover:bg-[#8FBBFB] transition-colors">
+    ดูรายละเอียด
+</button>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- Industry 7: น้ำประปา -->
+<div id="industry-water-supply" class="mb-xl scroll-mt-24">
+<h3 class="text-[18px] sm:text-[20px] md:text-[26px] lg:text-[30px] text-on-surface mb-md">น้ำประปา</h3>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-sm md:gap-md">
+
+<!-- Item 1 -->
+<div class="group bg-surface-container-lowest rounded-2xl border border-outline-variant overflow-hidden flex flex-col shadow-[0_8px_30px_rgba(0,0,0,0.04)] min-h-[280px] sm:min-h-[340px] md:min-h-[420px] lg:min-h-[500px]">
+<div class="flex-1 min-h-0 bg-surface-container-low relative overflow-hidden border-b-[4px] border-primary">
+<img alt="ระบบน้ำประปา" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://placehold.co/100x100/png?text=LOGO">
+</div>
+<div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
+<h3 class="text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">ระบบน้ำประปา</h3>
+<button
+    onclick="openProductModal(
+        'ระบบน้ำประปา',
+        'น้ำประปา',
+        '',
+        'https://placehold.co/100x100/png?text=LOGO'
+    )"
+    class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:ring-[#054097] hover:ring-1 hover:bg-[#8FBBFB] transition-colors">
+    ดูรายละเอียด
+</button>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
 </section>
 
 <!-- Promo Banner Slider (Mockup) -->
@@ -1394,6 +1689,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
             <a href="#solar-air-conditioner" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity">
                 แอร์โซล่าเซลล์
+            </a>
+
+            <a href="#filter-media" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity">
+                สารกรอง
             </a>
 
         </div>
