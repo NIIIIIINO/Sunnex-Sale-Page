@@ -134,7 +134,7 @@
             <div class="p-6 border-r border-outline-variant">
 
                 <h3 class="text-lg font-semibold text-on-surface mb-4">
-                    <a href="#product-section" class="no-underline text-on-surface hover:text-primary transition-colors">
+                    <a href="#product-section" onclick="showCatalog('product', 'all', true); return false;" class="no-underline text-on-surface hover:text-primary transition-colors">
                         ผลิตภัณฑ์
                     </a>
                 </h3>
@@ -142,11 +142,11 @@
                 <div class="grid grid-cols-2 gap-2">
 
                     <!-- น้ำประปา -->
-                    <a href="#water-supply"
+                    <a href="#catalog"
                         class="group/item flex items-center gap-3 p-3 rounded-xl
                                no-underline text-on-surface-variant
                                hover:bg-surface-container-low hover:text-primary
-                               transition-all duration-200">
+                               transition-all duration-200" onclick="showCatalog('product', 'water-supply', true); closeAllMobileMenu?.(); return false;">
                         <span class="material-symbols-outlined text-2xl shrink-0">
                             water_drop
                         </span>
@@ -156,11 +156,11 @@
                     </a>
 
                     <!-- น้ำดื่มสะอาด -->
-                    <a href="#clean-drinking-water"
+                    <a href="#catalog"
                         class="group/item flex items-center gap-3 p-3 rounded-xl
                                no-underline text-on-surface-variant
                                hover:bg-surface-container-low hover:text-primary
-                               transition-all duration-200">
+                               transition-all duration-200" onclick="showCatalog('product', 'clean-drinking-water', true); closeAllMobileMenu?.(); return false;">
                         <span class="material-symbols-outlined text-2xl shrink-0">
                             local_drink
                         </span>
@@ -170,11 +170,11 @@
                     </a>
 
                     <!-- พลังงานแสงอาทิตย์ -->
-                    <a href="#solar-energy"
+                    <a href="#catalog"
                         class="group/item flex items-center gap-3 p-3 rounded-xl
                                no-underline text-on-surface-variant
                                hover:bg-surface-container-low hover:text-primary
-                               transition-all duration-200">
+                               transition-all duration-200" onclick="showCatalog('product', 'solar-energy', true); closeAllMobileMenu?.(); return false;">
                         <span class="material-symbols-outlined text-2xl shrink-0">
                             solar_power
                         </span>
@@ -184,11 +184,11 @@
                     </a>
 
                     <!-- ระบบตู้ควบคุมไฟฟ้า -->
-                    <a href="#electric-control-panels"
+                    <a href="#catalog"
                         class="group/item flex items-center gap-3 p-3 rounded-xl
                                no-underline text-on-surface-variant
                                hover:bg-surface-container-low hover:text-primary
-                               transition-all duration-200">
+                               transition-all duration-200" onclick="showCatalog('product', 'electric-control-panels', true); closeAllMobileMenu?.(); return false;">
                         <span class="material-symbols-outlined text-2xl shrink-0">
                             electrical_services
                         </span>
@@ -198,11 +198,11 @@
                     </a>
 
                     <!-- เมืองปลอดภัย -->
-                    <a href="#safe-cities"
+                    <a href="#catalog"
                         class="group/item flex items-center gap-3 p-3 rounded-xl
                                no-underline text-on-surface-variant
                                hover:bg-surface-container-low hover:text-primary
-                               transition-all duration-200">
+                               transition-all duration-200" onclick="showCatalog('product', 'safe-cities', true); closeAllMobileMenu?.(); return false;">
                         <span class="material-symbols-outlined text-2xl shrink-0">
                             location_city
                         </span>
@@ -212,11 +212,11 @@
                     </a>
 
                     <!-- โดรน -->
-                    <a href="#drones"
+                    <a href="#catalog"
                         class="group/item flex items-center gap-3 p-3 rounded-xl
                                no-underline text-on-surface-variant
                                hover:bg-surface-container-low hover:text-primary
-                               transition-all duration-200">
+                               transition-all duration-200" onclick="showCatalog('product', 'drones', true); closeAllMobileMenu?.(); return false;">
                         <span class="material-symbols-outlined text-2xl shrink-0">
                             flight
                         </span>
@@ -226,11 +226,11 @@
                     </a>
 
                     <!-- จอ CLD -->
-                    <a href="#cld-screens"
+                    <a href="#catalog"
                         class="group/item flex items-center gap-3 p-3 rounded-xl
                                no-underline text-on-surface-variant
                                hover:bg-surface-container-low hover:text-primary
-                               transition-all duration-200">
+                               transition-all duration-200" onclick="showCatalog('product', 'cld-screens', true); closeAllMobileMenu?.(); return false;">
                         <span class="material-symbols-outlined text-2xl shrink-0">
                             tv
                         </span>
@@ -240,11 +240,11 @@
                     </a>
 
                     <!-- แอร์โซล่าเซลล์ -->
-                    <a href="#solar-air-conditioner"
+                    <a href="#catalog"
                         class="group/item flex items-center gap-3 p-3 rounded-xl
                                no-underline text-on-surface-variant
                                hover:bg-surface-container-low hover:text-primary
-                               transition-all duration-200">
+                               transition-all duration-200" onclick="showCatalog('product', 'solar-air-conditioner', true); closeAllMobileMenu?.(); return false;">
                         <span class="material-symbols-outlined text-2xl shrink-0">
                             ac_unit
                         </span>
@@ -254,11 +254,11 @@
                     </a>
 
                     <!-- สารกรองและบริการ -->
-                    <a href="#filter-media"
+                    <a href="#catalog"
                         class="group/item flex items-center gap-3 p-3 rounded-xl
                                no-underline text-on-surface-variant
                                hover:bg-surface-container-low hover:text-primary
-                               transition-all duration-200">
+                               transition-all duration-200" onclick="showCatalog('product', 'filter-media', true); closeAllMobileMenu?.(); return false;">
                         <span class="material-symbols-outlined text-2xl shrink-0">
                             filter_alt
                         </span>
@@ -277,7 +277,7 @@
             <div class="p-6">
 
                 <h3 class="text-lg font-semibold text-on-surface mb-4">
-                    <a href="#industry-section" class="no-underline text-on-surface hover:text-primary transition-colors">
+                    <a href="#industry-section" onclick="showCatalog('industry', 'all', true); return false;" class="no-underline text-on-surface hover:text-primary transition-colors">
                         อุตสาหกรรม
                     </a>
                 </h3>
@@ -285,11 +285,11 @@
                 <div class="grid grid-cols-2 gap-2">
 
                     <!-- เกษตรกรรม -->
-                    <a href="#agriculture"
+                    <a href="#catalog"
                         class="group/item flex items-center gap-3 p-3 rounded-xl
                                no-underline text-on-surface-variant
                                hover:bg-surface-container-low hover:text-primary
-                               transition-all duration-200">
+                               transition-all duration-200" onclick="showCatalog('industry', 'agriculture', true); closeAllMobileMenu?.(); return false;">
                         <span class="material-symbols-outlined text-2xl shrink-0">
                             agriculture
                         </span>
@@ -299,11 +299,11 @@
                     </a>
 
                     <!-- ฟาร์ม -->
-                    <a href="#farm"
+                    <a href="#catalog"
                         class="group/item flex items-center gap-3 p-3 rounded-xl
                                no-underline text-on-surface-variant
                                hover:bg-surface-container-low hover:text-primary
-                               transition-all duration-200">
+                               transition-all duration-200" onclick="showCatalog('industry', 'farm', true); closeAllMobileMenu?.(); return false;">
                         <span class="material-symbols-outlined text-2xl shrink-0">
                             grass
                         </span>
@@ -313,11 +313,11 @@
                     </a>
 
                     <!-- ที่พักอาศัยรายย่อย -->
-                    <a href="#residential"
+                    <a href="#catalog"
                         class="group/item flex items-center gap-3 p-3 rounded-xl
                                no-underline text-on-surface-variant
                                hover:bg-surface-container-low hover:text-primary
-                               transition-all duration-200">
+                               transition-all duration-200" onclick="showCatalog('industry', 'residential', true); closeAllMobileMenu?.(); return false;">
                         <span class="material-symbols-outlined text-2xl shrink-0">
                             home
                         </span>
@@ -327,11 +327,11 @@
                     </a>
 
                     <!-- โซล่าเซลล์ -->
-                    <a href="#solar-cell"
+                    <a href="#catalog"
                         class="group/item flex items-center gap-3 p-3 rounded-xl
                                no-underline text-on-surface-variant
                                hover:bg-surface-container-low hover:text-primary
-                               transition-all duration-200">
+                               transition-all duration-200" onclick="showCatalog('industry', 'solar-cell', true); closeAllMobileMenu?.(); return false;">
                         <span class="material-symbols-outlined text-2xl shrink-0">
                             solar_power
                         </span>
@@ -341,11 +341,11 @@
                     </a>
 
                     <!-- สระว่ายน้ำ -->
-                    <a href="#swimming-pool"
+                    <a href="#catalog"
                         class="group/item flex items-center gap-3 p-3 rounded-xl
                                no-underline text-on-surface-variant
                                hover:bg-surface-container-low hover:text-primary
-                               transition-all duration-200">
+                               transition-all duration-200" onclick="showCatalog('industry', 'swimming-pool', true); closeAllMobileMenu?.(); return false;">
                         <span class="material-symbols-outlined text-2xl shrink-0">
                             pool
                         </span>
@@ -355,11 +355,11 @@
                     </a>
 
                     <!-- น้ำดื่มสะอาด -->
-                    <a href="#industry-drinking-water"
+                    <a href="#catalog"
                         class="group/item flex items-center gap-3 p-3 rounded-xl
                                no-underline text-on-surface-variant
                                hover:bg-surface-container-low hover:text-primary
-                               transition-all duration-200">
+                               transition-all duration-200" onclick="showCatalog('industry', 'industry-drinking-water', true); closeAllMobileMenu?.(); return false;">
                         <span class="material-symbols-outlined text-2xl shrink-0">
                             local_drink
                         </span>
@@ -369,11 +369,11 @@
                     </a>
 
                     <!-- น้ำประปา -->
-                    <a href="#industry-water-supply"
+                    <a href="#catalog"
                         class="group/item flex items-center gap-3 p-3 rounded-xl
                                no-underline text-on-surface-variant
                                hover:bg-surface-container-low hover:text-primary
-                               transition-all duration-200">
+                               transition-all duration-200" onclick="showCatalog('industry', 'industry-water-supply', true); closeAllMobileMenu?.(); return false;">
                         <span class="material-symbols-outlined text-2xl shrink-0">
                             water_drop
                         </span>
@@ -429,72 +429,74 @@
         <!-- ================= ผลิตภัณฑ์ ================= -->
         <div class="border-b border-outline-variant/60 pb-1">
 
-            <button onclick="toggleMobileDropdown('product')"
-                class="w-full flex items-center justify-between py-3
-                       text-left font-medium text-on-surface
-                       hover:text-primary transition-colors">
+            <div class="w-full flex items-center justify-between py-1">
+                <button type="button"
+                    onclick="showCatalog('product', 'all', true); closeAllMobileMenu()"
+                    class="flex-1 py-3 text-left font-medium text-on-surface hover:text-primary transition-colors">
+                    ผลิตภัณฑ์
+                </button>
 
-                <span>ผลิตภัณฑ์</span>
-
-                <span id="productArrow"
-                    class="text-xs transition-transform duration-200">
-                    ▼
-                </span>
-            </button>
+                <button type="button"
+                    onclick="toggleMobileDropdown('product')"
+                    class="w-10 h-10 flex items-center justify-center text-on-surface hover:text-primary transition-colors"
+                    aria-label="เปิดเมนูผลิตภัณฑ์">
+                    <span id="productArrow" class="text-xs transition-transform duration-200">▼</span>
+                </button>
+            </div>
 
             <div id="productDropdown"
     class="hidden flex-col gap-1 pl-4 pb-2">
 
-    <a href="#water-supply" onclick="closeAllMobileMenu()"
-        class="flex items-center gap-3 py-2 text-sm text-on-surface-variant hover:text-primary transition-colors">
+    <a href="#catalog"
+        class="flex items-center gap-3 py-2 text-sm text-on-surface-variant hover:text-primary transition-colors" onclick="showCatalog('product', 'water-supply', true); closeAllMobileMenu?.(); return false;">
         <span class="material-symbols-outlined text-[20px] shrink-0">water_drop</span>
         <span>น้ำประปา</span>
     </a>
 
-    <a href="#clean-drinking-water" onclick="closeAllMobileMenu()"
-        class="flex items-center gap-3 py-2 text-sm text-on-surface-variant hover:text-primary transition-colors">
+    <a href="#catalog"
+        class="flex items-center gap-3 py-2 text-sm text-on-surface-variant hover:text-primary transition-colors" onclick="showCatalog('product', 'clean-drinking-water', true); closeAllMobileMenu?.(); return false;">
         <span class="material-symbols-outlined text-[20px] shrink-0">local_drink</span>
         <span>น้ำดื่มสะอาด</span>
     </a>
 
-    <a href="#solar-energy" onclick="closeAllMobileMenu()"
-        class="flex items-center gap-3 py-2 text-sm text-on-surface-variant hover:text-primary transition-colors">
+    <a href="#catalog"
+        class="flex items-center gap-3 py-2 text-sm text-on-surface-variant hover:text-primary transition-colors" onclick="showCatalog('product', 'solar-energy', true); closeAllMobileMenu?.(); return false;">
         <span class="material-symbols-outlined text-[20px] shrink-0">solar_power</span>
         <span>พลังงานแสงอาทิตย์</span>
     </a>
 
-    <a href="#electric-control-panels" onclick="closeAllMobileMenu()"
-        class="flex items-center gap-3 py-2 text-sm text-on-surface-variant hover:text-primary transition-colors">
+    <a href="#catalog"
+        class="flex items-center gap-3 py-2 text-sm text-on-surface-variant hover:text-primary transition-colors" onclick="showCatalog('product', 'electric-control-panels', true); closeAllMobileMenu?.(); return false;">
         <span class="material-symbols-outlined text-[20px] shrink-0">electrical_services</span>
         <span>ระบบตู้ควบคุมไฟฟ้า</span>
     </a>
 
-    <a href="#safe-cities" onclick="closeAllMobileMenu()"
-        class="flex items-center gap-3 py-2 text-sm text-on-surface-variant hover:text-primary transition-colors">
+    <a href="#catalog"
+        class="flex items-center gap-3 py-2 text-sm text-on-surface-variant hover:text-primary transition-colors" onclick="showCatalog('product', 'safe-cities', true); closeAllMobileMenu?.(); return false;">
         <span class="material-symbols-outlined text-[20px] shrink-0">location_city</span>
         <span>เมืองปลอดภัย</span>
     </a>
 
-    <a href="#drones" onclick="closeAllMobileMenu()"
-        class="flex items-center gap-3 py-2 text-sm text-on-surface-variant hover:text-primary transition-colors">
+    <a href="#catalog"
+        class="flex items-center gap-3 py-2 text-sm text-on-surface-variant hover:text-primary transition-colors" onclick="showCatalog('product', 'drones', true); closeAllMobileMenu?.(); return false;">
         <span class="material-symbols-outlined text-[20px] shrink-0">flight</span>
         <span>โดรน</span>
     </a>
 
-    <a href="#cld-screens" onclick="closeAllMobileMenu()"
-        class="flex items-center gap-3 py-2 text-sm text-on-surface-variant hover:text-primary transition-colors">
+    <a href="#catalog"
+        class="flex items-center gap-3 py-2 text-sm text-on-surface-variant hover:text-primary transition-colors" onclick="showCatalog('product', 'cld-screens', true); closeAllMobileMenu?.(); return false;">
         <span class="material-symbols-outlined text-[20px] shrink-0">tv</span>
         <span>จอ CLD</span>
     </a>
 
-    <a href="#solar-air-conditioner" onclick="closeAllMobileMenu()"
-        class="flex items-center gap-3 py-2 text-sm text-on-surface-variant hover:text-primary transition-colors">
+    <a href="#catalog"
+        class="flex items-center gap-3 py-2 text-sm text-on-surface-variant hover:text-primary transition-colors" onclick="showCatalog('product', 'solar-air-conditioner', true); closeAllMobileMenu?.(); return false;">
         <span class="material-symbols-outlined text-[20px] shrink-0">ac_unit</span>
         <span>แอร์โซล่าเซลล์</span>
     </a>
 
-    <a href="#filter-media" onclick="closeAllMobileMenu()"
-        class="flex items-center gap-3 py-2 text-sm text-on-surface-variant hover:text-primary transition-colors">
+    <a href="#catalog"
+        class="flex items-center gap-3 py-2 text-sm text-on-surface-variant hover:text-primary transition-colors" onclick="showCatalog('product', 'filter-media', true); closeAllMobileMenu?.(); return false;">
         <span class="material-symbols-outlined text-[20px] shrink-0">filter_alt</span>
         <span>สารกรองและบริการ</span>
     </a>
@@ -506,60 +508,62 @@
         <!-- ================= อุตสาหกรรม ================= -->
         <div class="border-b border-outline-variant/60 pb-1">
 
-            <button onclick="toggleMobileDropdown('industry')"
-                class="w-full flex items-center justify-between py-3
-                       text-left font-medium text-on-surface
-                       hover:text-primary transition-colors">
+            <div class="w-full flex items-center justify-between py-1">
+                <button type="button"
+                    onclick="showCatalog('industry', 'all', true); closeAllMobileMenu()"
+                    class="flex-1 py-3 text-left font-medium text-on-surface hover:text-primary transition-colors">
+                    อุตสาหกรรม
+                </button>
 
-                <span>อุตสาหกรรม</span>
-
-                <span id="industryArrow"
-                    class="text-xs transition-transform duration-200">
-                    ▼
-                </span>
-            </button>
+                <button type="button"
+                    onclick="toggleMobileDropdown('industry')"
+                    class="w-10 h-10 flex items-center justify-center text-on-surface hover:text-primary transition-colors"
+                    aria-label="เปิดเมนูอุตสาหกรรม">
+                    <span id="industryArrow" class="text-xs transition-transform duration-200">▼</span>
+                </button>
+            </div>
 
             <div id="industryDropdown"
     class="hidden flex-col gap-1 pl-4 pb-2">
 
-    <a href="#agriculture" onclick="closeAllMobileMenu()"
-        class="flex items-center gap-3 py-2 text-sm text-on-surface-variant hover:text-primary transition-colors">
+    <a href="#catalog"
+        class="flex items-center gap-3 py-2 text-sm text-on-surface-variant hover:text-primary transition-colors" onclick="showCatalog('industry', 'agriculture', true); closeAllMobileMenu?.(); return false;">
         <span class="material-symbols-outlined text-[20px] shrink-0">agriculture</span>
         <span>เกษตรกรรม</span>
     </a>
 
-    <a href="#farm" onclick="closeAllMobileMenu()"
-        class="flex items-center gap-3 py-2 text-sm text-on-surface-variant hover:text-primary transition-colors">
+    <a href="#catalog"
+        class="flex items-center gap-3 py-2 text-sm text-on-surface-variant hover:text-primary transition-colors" onclick="showCatalog('industry', 'farm', true); closeAllMobileMenu?.(); return false;">
         <span class="material-symbols-outlined text-[20px] shrink-0">grass</span>
         <span>ฟาร์ม</span>
     </a>
 
-    <a href="#residential" onclick="closeAllMobileMenu()"
-        class="flex items-center gap-3 py-2 text-sm text-on-surface-variant hover:text-primary transition-colors">
+    <a href="#catalog"
+        class="flex items-center gap-3 py-2 text-sm text-on-surface-variant hover:text-primary transition-colors" onclick="showCatalog('industry', 'residential', true); closeAllMobileMenu?.(); return false;">
         <span class="material-symbols-outlined text-[20px] shrink-0">home</span>
         <span>ที่พักอาศัยรายย่อย</span>
     </a>
 
-    <a href="#solar-cell" onclick="closeAllMobileMenu()"
-        class="flex items-center gap-3 py-2 text-sm text-on-surface-variant hover:text-primary transition-colors">
+    <a href="#catalog"
+        class="flex items-center gap-3 py-2 text-sm text-on-surface-variant hover:text-primary transition-colors" onclick="showCatalog('industry', 'solar-cell', true); closeAllMobileMenu?.(); return false;">
         <span class="material-symbols-outlined text-[20px] shrink-0">solar_power</span>
         <span>โซล่าเซลล์</span>
     </a>
 
-    <a href="#swimming-pool" onclick="closeAllMobileMenu()"
-        class="flex items-center gap-3 py-2 text-sm text-on-surface-variant hover:text-primary transition-colors">
+    <a href="#catalog"
+        class="flex items-center gap-3 py-2 text-sm text-on-surface-variant hover:text-primary transition-colors" onclick="showCatalog('industry', 'swimming-pool', true); closeAllMobileMenu?.(); return false;">
         <span class="material-symbols-outlined text-[20px] shrink-0">pool</span>
         <span>สระว่ายน้ำ</span>
     </a>
 
-    <a href="#industry-drinking-water" onclick="closeAllMobileMenu()"
-        class="flex items-center gap-3 py-2 text-sm text-on-surface-variant hover:text-primary transition-colors">
+    <a href="#catalog"
+        class="flex items-center gap-3 py-2 text-sm text-on-surface-variant hover:text-primary transition-colors" onclick="showCatalog('industry', 'industry-drinking-water', true); closeAllMobileMenu?.(); return false;">
         <span class="material-symbols-outlined text-[20px] shrink-0">local_drink</span>
         <span>น้ำดื่มสะอาด</span>
     </a>
 
-    <a href="#industry-water-supply" onclick="closeAllMobileMenu()"
-        class="flex items-center gap-3 py-2 text-sm text-on-surface-variant hover:text-primary transition-colors">
+    <a href="#catalog"
+        class="flex items-center gap-3 py-2 text-sm text-on-surface-variant hover:text-primary transition-colors" onclick="showCatalog('industry', 'industry-water-supply', true); closeAllMobileMenu?.(); return false;">
         <span class="material-symbols-outlined text-[20px] shrink-0">water_drop</span>
         <span>น้ำประปา</span>
     </a>
@@ -771,20 +775,6 @@ function closeAllMobileMenu() {
 
             <img src="https://cdn.phototourl.com/free/2026-09-02-750188e7-f6c7-46f0-b2bb-14f18ed48306.jpg" alt="" class="h-16 w-16 rounded-full object-cover flex-shrink-0">
         </div>
-        <!-- ชุดที่ 2 ซ้ำเหมือนชุดแรก 100% -->
-        <div class="logo-set" aria-hidden="true">
-            <img src="https://cdn.phototourl.com/free/2026-09-02-c56a6e15-73c7-4e17-a4dc-5942c48e8116.png" alt="" class="h-16 w-16 rounded-full object-cover flex-shrink-0">
-
-            <img src="https://cdn.phototourl.com/free/2026-09-02-750188e7-f6c7-46f0-b2bb-14f18ed48306.jpg" alt="" class="h-16 w-16 rounded-full object-cover flex-shrink-0">
-
-            <img src="https://cdn.phototourl.com/free/2026-09-02-5d76a3a1-ac23-43ce-888b-47e6206501da.webp" alt="" class="h-16 w-16 rounded-full object-cover flex-shrink-0">
-
-            <img src="https://cdn.phototourl.com/member/2026-09-02-efe8059d-f532-4f4e-a28c-3fe91c1a9b9f.jpg" alt="" class="h-16 w-16 rounded-full object-cover flex-shrink-0">
-
-            <img src="https://cdn.phototourl.com/free/2026-09-02-c56a6e15-73c7-4e17-a4dc-5942c48e8116.png" alt="" class="h-16 w-16 rounded-full object-cover flex-shrink-0">
-
-            <img src="https://cdn.phototourl.com/free/2026-09-02-750188e7-f6c7-46f0-b2bb-14f18ed48306.jpg" alt="" class="h-16 w-16 rounded-full object-cover flex-shrink-0">
-        </div>
 
     </div>
 
@@ -864,25 +854,26 @@ document.addEventListener('DOMContentLoaded', () => {
 <!-- Catalog Section -->
 <section class="py-xl bg-surface-container" id="catalog">
 <div class="max-w-container-max mx-auto px-gutter">
-<div class="text-center mb-lg">
-<h2 class="font-display-lg-mobile text-display-lg-mobile md:font-display-md md:text-display-md lg:font-display-lg lg:text-display-lg text-on-surface mb-sm">ผลิตภัณฑ์และโซลูชัน</h2>
-<p class="font-body-lg text-[13px] sm:text-[18px] md:text-[20px] lg:text-[22px] text-on-surface-variant max-w-2xl mx-auto">โซลูชันด้านการจัดการน้ำที่ออกแบบมาเพื่อทุกระดับการใช้งาน</p>
+<div id="product-section" class="text-center mb-lg scroll-mt-24">
+<h2 class="font-display-lg-mobile text-display-lg-mobile md:font-display-md md:text-display-md lg:font-display-lg lg:text-display-lg text-on-surface mb-sm">ผลิตภัณฑ์</h2>
+<p class="font-body-lg text-[13px] sm:text-[18px] md:text-[20px] lg:text-[22px] text-on-surface-variant max-w-2xl mx-auto">ผลิตภัณฑ์และโซลูชันด้านการจัดการน้ำและพลังงาน</p>
 </div>
 
-<!-- Tab Navigation (Visual Only for now) -->
-<div class="flex flex-wrap justify-center gap-sm mb-lg border-b border-outline-variant pb-xs">
-<a class="px-sm py-xs sm:px-md sm:py-sm text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant hover:text-primary transition-colors" href="#water-supply">น้ำประปา</a>
-<a class="px-sm py-xs sm:px-md sm:py-sm text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant hover:text-primary transition-colors" href="#clean-drinking-water">น้ำดื่มสะอาด</a>
-<a class="px-sm py-xs sm:px-md sm:py-sm text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant hover:text-primary transition-colors" href="#solar-energy">พลังงานแสงอาทิตย์</a>
-<a class="px-sm py-xs sm:px-md sm:py-sm text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant hover:text-primary transition-colors" href="#electric-control-panels">ระบบตู้ควบคุมไฟฟ้า</a>
-<a class="px-sm py-xs sm:px-md sm:py-sm text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant hover:text-primary transition-colors" href="#safe-cities">เมืองปลอดภัย</a>
-<a class="px-sm py-xs sm:px-md sm:py-sm text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant hover:text-primary transition-colors" href="#drones">โดรน</a>
-<a class="px-sm py-xs sm:px-md sm:py-sm text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant hover:text-primary transition-colors" href="#cld-screens">จอCLD</a>
-<a class="px-sm py-xs sm:px-md sm:py-sm text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant hover:text-primary transition-colors" href="#solar-air-conditioner">แอร์โซล่าเซลล์</a>
-<a class="px-sm py-xs sm:px-md sm:py-sm text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant hover:text-primary transition-colors" href="#filter-media">สารกรองและบริการ</a>
+<!-- Product Sub Navigation -->
+<div id="productCatalogTabs" class="flex flex-wrap justify-center gap-sm mb-lg border-b border-outline-variant pb-xs">
+    <button type="button" data-catalog-group="product" data-catalog-filter="all" onclick="showCatalog('product', 'all', true)" class="catalog-sub-tab inline-flex items-center gap-2 px-sm py-xs sm:px-md sm:py-sm rounded-full text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] transition-all duration-200 hover:bg-white hover:text-primary hover:shadow-sm"><span class="material-symbols-outlined text-[18px] sm:text-[20px] shrink-0">apps</span><span>ทั้งหมด</span></button>
+    <button type="button" data-catalog-group="product" data-catalog-filter="water-supply" onclick="showCatalog('product', 'water-supply', true)" class="catalog-sub-tab inline-flex items-center gap-2 px-sm py-xs sm:px-md sm:py-sm rounded-full text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant transition-all duration-200 hover:bg-white hover:text-primary hover:shadow-sm"><span class="material-symbols-outlined text-[18px] sm:text-[20px] shrink-0">water_drop</span><span>น้ำประปา</span></button>
+    <button type="button" data-catalog-group="product" data-catalog-filter="clean-drinking-water" onclick="showCatalog('product', 'clean-drinking-water', true)" class="catalog-sub-tab inline-flex items-center gap-2 px-sm py-xs sm:px-md sm:py-sm rounded-full text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant transition-all duration-200 hover:bg-white hover:text-primary hover:shadow-sm"><span class="material-symbols-outlined text-[18px] sm:text-[20px] shrink-0">local_drink</span><span>น้ำดื่มสะอาด</span></button>
+    <button type="button" data-catalog-group="product" data-catalog-filter="solar-energy" onclick="showCatalog('product', 'solar-energy', true)" class="catalog-sub-tab inline-flex items-center gap-2 px-sm py-xs sm:px-md sm:py-sm rounded-full text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant transition-all duration-200 hover:bg-white hover:text-primary hover:shadow-sm"><span class="material-symbols-outlined text-[18px] sm:text-[20px] shrink-0">solar_power</span><span>พลังงานแสงอาทิตย์</span></button>
+    <button type="button" data-catalog-group="product" data-catalog-filter="electric-control-panels" onclick="showCatalog('product', 'electric-control-panels', true)" class="catalog-sub-tab inline-flex items-center gap-2 px-sm py-xs sm:px-md sm:py-sm rounded-full text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant transition-all duration-200 hover:bg-white hover:text-primary hover:shadow-sm"><span class="material-symbols-outlined text-[18px] sm:text-[20px] shrink-0">electrical_services</span><span>ระบบตู้ควบคุมไฟฟ้า</span></button>
+    <button type="button" data-catalog-group="product" data-catalog-filter="safe-cities" onclick="showCatalog('product', 'safe-cities', true)" class="catalog-sub-tab inline-flex items-center gap-2 px-sm py-xs sm:px-md sm:py-sm rounded-full text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant transition-all duration-200 hover:bg-white hover:text-primary hover:shadow-sm"><span class="material-symbols-outlined text-[18px] sm:text-[20px] shrink-0">location_city</span><span>เมืองปลอดภัย</span></button>
+    <button type="button" data-catalog-group="product" data-catalog-filter="drones" onclick="showCatalog('product', 'drones', true)" class="catalog-sub-tab inline-flex items-center gap-2 px-sm py-xs sm:px-md sm:py-sm rounded-full text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant transition-all duration-200 hover:bg-white hover:text-primary hover:shadow-sm"><span class="material-symbols-outlined text-[18px] sm:text-[20px] shrink-0">flight</span><span>โดรน</span></button>
+    <button type="button" data-catalog-group="product" data-catalog-filter="cld-screens" onclick="showCatalog('product', 'cld-screens', true)" class="catalog-sub-tab inline-flex items-center gap-2 px-sm py-xs sm:px-md sm:py-sm rounded-full text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant transition-all duration-200 hover:bg-white hover:text-primary hover:shadow-sm"><span class="material-symbols-outlined text-[18px] sm:text-[20px] shrink-0">tv</span><span>จอ CLD</span></button>
+    <button type="button" data-catalog-group="product" data-catalog-filter="solar-air-conditioner" onclick="showCatalog('product', 'solar-air-conditioner', true)" class="catalog-sub-tab inline-flex items-center gap-2 px-sm py-xs sm:px-md sm:py-sm rounded-full text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant transition-all duration-200 hover:bg-white hover:text-primary hover:shadow-sm"><span class="material-symbols-outlined text-[18px] sm:text-[20px] shrink-0">ac_unit</span><span>แอร์โซล่าเซลล์</span></button>
+    <button type="button" data-catalog-group="product" data-catalog-filter="filter-media" onclick="showCatalog('product', 'filter-media', true)" class="catalog-sub-tab inline-flex items-center gap-2 px-sm py-xs sm:px-md sm:py-sm rounded-full text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant transition-all duration-200 hover:bg-white hover:text-primary hover:shadow-sm"><span class="material-symbols-outlined text-[18px] sm:text-[20px] shrink-0">filter_alt</span><span>สารกรองและบริการ</span></button>
 </div>
 <!-- Category 1: น้ำประปา (Water Supply) -->
-<div id="water-supply" class="mb-xl scroll-mt-24">
+<div id="water-supply" data-catalog-panel="product" class="catalog-panel mb-xl">
 <h3 class="text-[18px] sm:text-[20px] md:text-[26px] lg:text-[30px] text-on-surface mb-md">น้ำประปา (Water Supply)</h3>
 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-sm md:gap-md">
 
@@ -979,7 +970,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </div>
 
 <!-- Category 2: น้ำดื่มสะอาด (Clean Drinking Water) -->
-<div id="clean-drinking-water" class="mb-xl scroll-mt-24">
+<div id="clean-drinking-water" data-catalog-panel="product" class="catalog-panel mb-xl">
 <h3 class="text-[18px] sm:text-[20px] md:text-[26px] lg:text-[30px] text-on-surface mb-md">น้ำดื่มสะอาด (Clean Drinking Water)</h3>
 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-sm md:gap-md">
 
@@ -1026,7 +1017,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </div>
 
 <!-- Category 3: พลังงานแสงอาทิตย์ (Solar Energy) -->
-<div id="solar-energy" class="mb-xl scroll-mt-24">
+<div id="solar-energy" data-catalog-panel="product" class="catalog-panel mb-xl">
 <h3 class="text-[18px] sm:text-[20px] md:text-[26px] lg:text-[30px] text-on-surface mb-md">พลังงานแสงอาทิตย์ (Solar Energy)</h3>
 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-sm md:gap-md">
 
@@ -1114,7 +1105,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </div>
 
 <!-- Category 4: ระบบตู้ควบคุมไฟฟ้า -->
-<div id="electric-control-panels" class="mb-xl scroll-mt-24">
+<div id="electric-control-panels" data-catalog-panel="product" class="catalog-panel mb-xl">
 <h3 class="text-[18px] sm:text-[20px] md:text-[26px] lg:text-[30px] text-on-surface mb-md">ระบบตู้ควบคุมไฟฟ้า</h3>
 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-sm md:gap-md">
 
@@ -1202,7 +1193,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </div>
 
 <!-- Category 5: เมืองปลอดภัย -->
-<div id="safe-cities" class="mb-xl scroll-mt-24">
+<div id="safe-cities" data-catalog-panel="product" class="catalog-panel mb-xl">
 <h3 class="text-[18px] sm:text-[20px] md:text-[26px] lg:text-[30px] text-on-surface mb-md">เมืองปลอดภัย</h3>
 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-sm md:gap-md">
 
@@ -1230,7 +1221,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </div>
 
 <!-- Category 6: โดรน -->
-<div id="drones" class="mb-xl scroll-mt-24">
+<div id="drones" data-catalog-panel="product" class="catalog-panel mb-xl">
 <h3 class="text-[18px] sm:text-[20px] md:text-[26px] lg:text-[30px] text-on-surface mb-md">โดรน</h3>
 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-sm md:gap-md">
 
@@ -1258,7 +1249,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </div>
 
 <!-- Category 7: จอCLD -->
-<div id="cld-screens" class="mb-xl scroll-mt-24">
+<div id="cld-screens" data-catalog-panel="product" class="catalog-panel mb-xl">
 <h3 class="text-[18px] sm:text-[20px] md:text-[26px] lg:text-[30px] text-on-surface mb-md">จอCLD</h3>
 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-sm md:gap-md">
 
@@ -1285,7 +1276,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </div>
 
 <!-- Category 8: แอร์โซล่าเซลล์ -->
-<div id="solar-air-conditioner" class="mb-xl scroll-mt-24">
+<div id="solar-air-conditioner" data-catalog-panel="product" class="catalog-panel mb-xl">
 <h3 class="text-[18px] sm:text-[20px] md:text-[26px] lg:text-[30px] text-on-surface mb-md">แอร์โซล่าเซลล์</h3>
 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-sm md:gap-md">
 
@@ -1313,7 +1304,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </div>
 
 <!-- Category 9: สารกรองและบริการ -->
-<div id="filter-media" class="mb-xl scroll-mt-24">
+<div id="filter-media" data-catalog-panel="product" class="catalog-panel mb-xl">
 <h3 class="text-[18px] sm:text-[20px] md:text-[26px] lg:text-[30px] text-on-surface mb-md">สารกรองและบริการ</h3>
 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-sm md:gap-md">
 
@@ -1346,18 +1337,20 @@ document.addEventListener('DOMContentLoaded', () => {
 <p class="font-body-lg text-[13px] sm:text-[18px] md:text-[20px] lg:text-[22px] text-on-surface-variant max-w-2xl mx-auto">โซลูชันที่เหมาะสมสำหรับแต่ละประเภทอุตสาหกรรมและการใช้งาน</p>
 </div>
 
-<div class="flex flex-wrap justify-center gap-sm mb-lg border-b border-outline-variant pb-xs">
-<a class="px-sm py-xs sm:px-md sm:py-sm text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant hover:text-primary transition-colors" href="#agriculture">เกษตรกรรม</a>
-<a class="px-sm py-xs sm:px-md sm:py-sm text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant hover:text-primary transition-colors" href="#farm">ฟาร์ม</a>
-<a class="px-sm py-xs sm:px-md sm:py-sm text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant hover:text-primary transition-colors" href="#residential">ที่พักอาศัยรายย่อย</a>
-<a class="px-sm py-xs sm:px-md sm:py-sm text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant hover:text-primary transition-colors" href="#solar-cell">โซล่าเซลล์</a>
-<a class="px-sm py-xs sm:px-md sm:py-sm text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant hover:text-primary transition-colors" href="#swimming-pool">สระว่ายน้ำ</a>
-<a class="px-sm py-xs sm:px-md sm:py-sm text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant hover:text-primary transition-colors" href="#industry-drinking-water">น้ำดื่มสะอาด</a>
-<a class="px-sm py-xs sm:px-md sm:py-sm text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant hover:text-primary transition-colors" href="#industry-water-supply">น้ำประปา</a>
+<!-- Industry Sub Navigation -->
+<div id="industryCatalogTabs" class="flex flex-wrap justify-center gap-sm mb-lg border-b border-outline-variant pb-xs">
+    <button type="button" data-catalog-group="industry" data-catalog-filter="all" onclick="showCatalog('industry', 'all', true)" class="catalog-sub-tab inline-flex items-center gap-2 px-sm py-xs sm:px-md sm:py-sm rounded-full text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] transition-all duration-200 hover:bg-white hover:text-primary hover:shadow-sm"><span class="material-symbols-outlined text-[18px] sm:text-[20px] shrink-0">apps</span><span>ทั้งหมด</span></button>
+    <button type="button" data-catalog-group="industry" data-catalog-filter="agriculture" onclick="showCatalog('industry', 'agriculture', true)" class="catalog-sub-tab inline-flex items-center gap-2 px-sm py-xs sm:px-md sm:py-sm rounded-full text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant transition-all duration-200 hover:bg-white hover:text-primary hover:shadow-sm"><span class="material-symbols-outlined text-[18px] sm:text-[20px] shrink-0">agriculture</span><span>เกษตรกรรม</span></button>
+    <button type="button" data-catalog-group="industry" data-catalog-filter="farm" onclick="showCatalog('industry', 'farm', true)" class="catalog-sub-tab inline-flex items-center gap-2 px-sm py-xs sm:px-md sm:py-sm rounded-full text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant transition-all duration-200 hover:bg-white hover:text-primary hover:shadow-sm"><span class="material-symbols-outlined text-[18px] sm:text-[20px] shrink-0">grass</span><span>ฟาร์ม</span></button>
+    <button type="button" data-catalog-group="industry" data-catalog-filter="residential" onclick="showCatalog('industry', 'residential', true)" class="catalog-sub-tab inline-flex items-center gap-2 px-sm py-xs sm:px-md sm:py-sm rounded-full text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant transition-all duration-200 hover:bg-white hover:text-primary hover:shadow-sm"><span class="material-symbols-outlined text-[18px] sm:text-[20px] shrink-0">home</span><span>ที่พักอาศัยรายย่อย</span></button>
+    <button type="button" data-catalog-group="industry" data-catalog-filter="solar-cell" onclick="showCatalog('industry', 'solar-cell', true)" class="catalog-sub-tab inline-flex items-center gap-2 px-sm py-xs sm:px-md sm:py-sm rounded-full text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant transition-all duration-200 hover:bg-white hover:text-primary hover:shadow-sm"><span class="material-symbols-outlined text-[18px] sm:text-[20px] shrink-0">solar_power</span><span>โซล่าเซลล์</span></button>
+    <button type="button" data-catalog-group="industry" data-catalog-filter="swimming-pool" onclick="showCatalog('industry', 'swimming-pool', true)" class="catalog-sub-tab inline-flex items-center gap-2 px-sm py-xs sm:px-md sm:py-sm rounded-full text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant transition-all duration-200 hover:bg-white hover:text-primary hover:shadow-sm"><span class="material-symbols-outlined text-[18px] sm:text-[20px] shrink-0">pool</span><span>สระว่ายน้ำ</span></button>
+    <button type="button" data-catalog-group="industry" data-catalog-filter="industry-drinking-water" onclick="showCatalog('industry', 'industry-drinking-water', true)" class="catalog-sub-tab inline-flex items-center gap-2 px-sm py-xs sm:px-md sm:py-sm rounded-full text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant transition-all duration-200 hover:bg-white hover:text-primary hover:shadow-sm"><span class="material-symbols-outlined text-[18px] sm:text-[20px] shrink-0">local_drink</span><span>น้ำดื่มสะอาด</span></button>
+    <button type="button" data-catalog-group="industry" data-catalog-filter="industry-water-supply" onclick="showCatalog('industry', 'industry-water-supply', true)" class="catalog-sub-tab inline-flex items-center gap-2 px-sm py-xs sm:px-md sm:py-sm rounded-full text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant transition-all duration-200 hover:bg-white hover:text-primary hover:shadow-sm"><span class="material-symbols-outlined text-[18px] sm:text-[20px] shrink-0">water_drop</span><span>น้ำประปา</span></button>
 </div>
 
 <!-- Industry 1: เกษตรกรรม -->
-<div id="agriculture" class="mb-xl scroll-mt-24">
+<div id="agriculture" data-catalog-panel="industry" class="catalog-panel mb-xl">
 <h3 class="text-[18px] sm:text-[20px] md:text-[26px] lg:text-[30px] text-on-surface mb-md">เกษตรกรรม</h3>
 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-sm md:gap-md">
 
@@ -1385,7 +1378,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </div>
 
 <!-- Industry 2: ฟาร์ม -->
-<div id="farm" class="mb-xl scroll-mt-24">
+<div id="farm" data-catalog-panel="industry" class="catalog-panel mb-xl">
 <h3 class="text-[18px] sm:text-[20px] md:text-[26px] lg:text-[30px] text-on-surface mb-md">ฟาร์ม</h3>
 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-sm md:gap-md">
 
@@ -1413,7 +1406,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </div>
 
 <!-- Industry 3: ที่พักอาศัยรายย่อย -->
-<div id="residential" class="mb-xl scroll-mt-24">
+<div id="residential" data-catalog-panel="industry" class="catalog-panel mb-xl">
 <h3 class="text-[18px] sm:text-[20px] md:text-[26px] lg:text-[30px] text-on-surface mb-md">ที่พักอาศัยรายย่อย</h3>
 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-sm md:gap-md">
 
@@ -1441,7 +1434,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </div>
 
 <!-- Industry 4: โซล่าเซลล์ -->
-<div id="solar-cell" class="mb-xl scroll-mt-24">
+<div id="solar-cell" data-catalog-panel="industry" class="catalog-panel mb-xl">
 <h3 class="text-[18px] sm:text-[20px] md:text-[26px] lg:text-[30px] text-on-surface mb-md">โซล่าเซลล์</h3>
 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-sm md:gap-md">
 
@@ -1469,7 +1462,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </div>
 
 <!-- Industry 5: สระว่ายน้ำ -->
-<div id="swimming-pool" class="mb-xl scroll-mt-24">
+<div id="swimming-pool" data-catalog-panel="industry" class="catalog-panel mb-xl">
 <h3 class="text-[18px] sm:text-[20px] md:text-[26px] lg:text-[30px] text-on-surface mb-md">สระว่ายน้ำ</h3>
 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-sm md:gap-md">
 
@@ -1497,7 +1490,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </div>
 
 <!-- Industry 6: น้ำดื่มสะอาด -->
-<div id="industry-drinking-water" class="mb-xl scroll-mt-24">
+<div id="industry-drinking-water" data-catalog-panel="industry" class="catalog-panel mb-xl">
 <h3 class="text-[18px] sm:text-[20px] md:text-[26px] lg:text-[30px] text-on-surface mb-md">น้ำดื่มสะอาด</h3>
 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-sm md:gap-md">
 
@@ -1525,7 +1518,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </div>
 
 <!-- Industry 7: น้ำประปา -->
-<div id="industry-water-supply" class="mb-xl scroll-mt-24">
+<div id="industry-water-supply" data-catalog-panel="industry" class="catalog-panel mb-xl">
 <h3 class="text-[18px] sm:text-[20px] md:text-[26px] lg:text-[30px] text-on-surface mb-md">น้ำประปา</h3>
 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-sm md:gap-md">
 
@@ -1727,6 +1720,47 @@ document.addEventListener('DOMContentLoaded', () => {
 </section>
 </main>
 
+
+<!-- Catalog Filter Script -->
+<script>
+function showCatalog(group, filter = 'all', shouldScroll = false) {
+    // กรองเฉพาะ Section ที่ถูกกด โดยไม่กระทบอีก Section
+    document.querySelectorAll(`[data-catalog-panel="${group}"]`).forEach(panel => {
+        const matchFilter = filter === 'all' || panel.id === filter;
+        panel.classList.toggle('hidden', !matchFilter);
+    });
+
+    // Active ค้างเฉพาะแท็บใน Catalog ของ Section นั้น
+    document.querySelectorAll(`.catalog-sub-tab[data-catalog-group="${group}"]`).forEach(button => {
+        const active = button.dataset.catalogFilter === filter;
+
+        button.classList.toggle('bg-white', active);
+        button.classList.toggle('shadow-sm', active);
+        button.classList.toggle('ring-1', active);
+        button.classList.toggle('ring-primary/30', active);
+        button.classList.toggle('text-primary', active);
+        button.classList.toggle('font-semibold', active);
+        button.classList.toggle('text-on-surface-variant', !active);
+    });
+
+    // Navbar / Mobile / Footer: เลื่อนไปยัง Section ที่เกี่ยวข้อง
+    if (shouldScroll) {
+        const target = document.getElementById(group === 'product' ? 'product-section' : 'industry-section');
+        if (target) {
+            const headerOffset = 72;
+            const top = target.getBoundingClientRect().top + window.pageYOffset - headerOffset;
+            window.scrollTo({ top, behavior: 'smooth' });
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    // เปิดเว็บครั้งแรกให้ทั้งสอง Section แสดงทั้งหมด
+    showCatalog('product', 'all', false);
+    showCatalog('industry', 'all', false);
+});
+</script>
+
 <!-- Footer -->
 <footer class="bg-[#001F4D] w-full pt-lg sm:pt-xl pb-sm sm:pb-md border-t border-white/10">
     <div class="w-full px-sm sm:px-gutter">
@@ -1748,7 +1782,8 @@ document.addEventListener('DOMContentLoaded', () => {
     <div class="flex flex-col gap-xs sm:gap-sm">
 
         <h4 class="text-[16px] sm:text-[18px] md:text-[20px] lg:text-headline-md text-white font-semibold">
-            <a href="#catalog"
+            <a href="#product-section"
+               onclick="showCatalog('product', 'all', true); return false;"
                class="text-white no-underline hover:opacity-80 transition-opacity">
                 ผลิตภัณฑ์
             </a>
@@ -1756,39 +1791,39 @@ document.addEventListener('DOMContentLoaded', () => {
 
         <div class="grid grid-cols-2 gap-x-md sm:gap-x-lg gap-y-1 sm:gap-y-2">
 
-            <a href="#water-supply" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity">
+            <a href="#catalog" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity" onclick="showCatalog('product', 'water-supply', true); closeAllMobileMenu?.(); return false;">
                 น้ำประปา
             </a>
 
-            <a href="#clean-drinking-water" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity">
+            <a href="#catalog" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity" onclick="showCatalog('product', 'clean-drinking-water', true); closeAllMobileMenu?.(); return false;">
                 น้ำดื่มสะอาด
             </a>
 
-            <a href="#solar-energy" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity">
+            <a href="#catalog" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity" onclick="showCatalog('product', 'solar-energy', true); closeAllMobileMenu?.(); return false;">
                 พลังงานแสงอาทิตย์
             </a>
 
-            <a href="#electric-control-panels" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity">
+            <a href="#catalog" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity" onclick="showCatalog('product', 'electric-control-panels', true); closeAllMobileMenu?.(); return false;">
                 ระบบตู้ควบคุมไฟฟ้า
             </a>
 
-            <a href="#safe-cities" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity">
+            <a href="#catalog" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity" onclick="showCatalog('product', 'safe-cities', true); closeAllMobileMenu?.(); return false;">
                 เมืองปลอดภัย
             </a>
 
-            <a href="#drones" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity">
+            <a href="#catalog" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity" onclick="showCatalog('product', 'drones', true); closeAllMobileMenu?.(); return false;">
                 โดรน
             </a>
 
-            <a href="#cld-screens" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity">
+            <a href="#catalog" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity" onclick="showCatalog('product', 'cld-screens', true); closeAllMobileMenu?.(); return false;">
                 จอ CLD
             </a>
 
-            <a href="#solar-air-conditioner" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity">
+            <a href="#catalog" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity" onclick="showCatalog('product', 'solar-air-conditioner', true); closeAllMobileMenu?.(); return false;">
                 แอร์โซล่าเซลล์
             </a>
 
-            <a href="#filter-media" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity">
+            <a href="#catalog" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity" onclick="showCatalog('product', 'filter-media', true); closeAllMobileMenu?.(); return false;">
                 สารกรองและบริการ
             </a>
 
@@ -1800,7 +1835,8 @@ document.addEventListener('DOMContentLoaded', () => {
     <div class="flex flex-col gap-xs sm:gap-sm">
 
         <h4 class="text-[16px] sm:text-[18px] md:text-[20px] lg:text-headline-md text-white font-semibold">
-    <a href="#catalog"
+    <a href="#industry-section"
+       onclick="showCatalog('industry', 'all', true); return false;"
        class="text-white no-underline hover:opacity-80 transition-opacity">
         อุตสาหกรรม
     </a>
@@ -1808,31 +1844,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
         <div class="grid grid-cols-2 gap-x-md sm:gap-x-lg gap-y-1 sm:gap-y-2">
 
-            <a href="#agriculture" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity">
+            <a href="#catalog" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity" onclick="showCatalog('industry', 'agriculture', true); closeAllMobileMenu?.(); return false;">
                 เกษตรกรรม
             </a>
 
-            <a href="#farm" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity">
+            <a href="#catalog" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity" onclick="showCatalog('industry', 'farm', true); closeAllMobileMenu?.(); return false;">
                 ฟาร์ม
             </a>
 
-            <a href="#residential" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity">
+            <a href="#catalog" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity" onclick="showCatalog('industry', 'residential', true); closeAllMobileMenu?.(); return false;">
                 ที่พักอาศัยรายย่อย
             </a>
 
-            <a href="#solar-cell" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity">
+            <a href="#catalog" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity" onclick="showCatalog('industry', 'solar-cell', true); closeAllMobileMenu?.(); return false;">
                 โซล่าเซลล์
             </a>
 
-            <a href="#swimming-pool" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity">
+            <a href="#catalog" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity" onclick="showCatalog('industry', 'swimming-pool', true); closeAllMobileMenu?.(); return false;">
                 สระว่ายน้ำ
             </a>
 
-            <a href="#industry-drinking-water" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity">
+            <a href="#catalog" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity" onclick="showCatalog('industry', 'industry-drinking-water', true); closeAllMobileMenu?.(); return false;">
                 น้ำดื่มสะอาด
             </a>
 
-            <a href="#industry-water-supply" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity">
+            <a href="#catalog" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity" onclick="showCatalog('industry', 'industry-water-supply', true); closeAllMobileMenu?.(); return false;">
                 น้ำประปา
             </a>
 
