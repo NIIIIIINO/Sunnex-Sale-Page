@@ -205,6 +205,34 @@
                         </span>
                     </a>
 
+                    <!-- ถังเก็บน้ำชุมชน -->
+                    <a href="#catalog"
+                        class="group/item mega-hover-slide flex items-center gap-3 p-3 rounded-xl
+                               no-underline text-on-surface-variant
+                               hover:text-primary
+                               transition-all duration-200" onclick="showCatalog('product', 'community-water-tanks', true); closeAllMobileMenu?.(); return false;">
+                        <span class="material-symbols-outlined text-2xl shrink-0">
+                            water_full
+                        </span>
+                        <span class="text-sm leading-tight">
+                            ถังเก็บน้ำชุมชน
+                        </span>
+                    </a>
+
+                    <!-- ปั๊มน้ำคุณภาพดี -->
+                    <a href="#catalog"
+                        class="group/item mega-hover-slide flex items-center gap-3 p-3 rounded-xl
+                               no-underline text-on-surface-variant
+                               hover:text-primary
+                               transition-all duration-200" onclick="showCatalog('product', 'quality-water-pumps', true); closeAllMobileMenu?.(); return false;">
+                        <span class="material-symbols-outlined text-2xl shrink-0">
+                            water_pump
+                        </span>
+                        <span class="text-sm leading-tight">
+                            ปั๊มน้ำคุณภาพดี
+                        </span>
+                    </a>
+
                     <!-- น้ำดื่มสะอาด -->
                     <a href="#catalog"
                         class="group/item mega-hover-slide flex items-center gap-3 p-3 rounded-xl
@@ -501,6 +529,18 @@
         class="flex items-center gap-3 py-2 text-sm text-on-surface-variant hover:text-primary transition-colors" onclick="showCatalog('product', 'water-supply', true); closeAllMobileMenu?.(); return false;">
         <span class="material-symbols-outlined text-[20px] shrink-0">water_drop</span>
         <span>น้ำประปา</span>
+    </a>
+
+    <a href="#catalog"
+        class="flex items-center gap-3 py-2 text-sm text-on-surface-variant hover:text-primary transition-colors" onclick="showCatalog('product', 'community-water-tanks', true); closeAllMobileMenu?.(); return false;">
+        <span class="material-symbols-outlined text-[20px] shrink-0">water_full</span>
+        <span>ถังเก็บน้ำชุมชน</span>
+    </a>
+
+    <a href="#catalog"
+        class="flex items-center gap-3 py-2 text-sm text-on-surface-variant hover:text-primary transition-colors" onclick="showCatalog('product', 'quality-water-pumps', true); closeAllMobileMenu?.(); return false;">
+        <span class="material-symbols-outlined text-[20px] shrink-0">water_pump</span>
+        <span>ปั๊มน้ำคุณภาพดี</span>
     </a>
 
     <a href="#catalog"
@@ -913,6 +953,8 @@ document.addEventListener('DOMContentLoaded', () => {
 <div id="productCatalogTabs" class="flex flex-wrap justify-center gap-sm mb-lg border-b border-outline-variant pb-xs">
     <button type="button" data-catalog-group="product" data-catalog-filter="all" onclick="showCatalog('product', 'all', true)" class="catalog-sub-tab inline-flex items-center gap-2 px-sm py-xs sm:px-md sm:py-sm rounded-full text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] transition-all duration-200 hover:text-primary hover:shadow-sm"><span class="material-symbols-outlined text-[18px] sm:text-[20px] shrink-0">apps</span><span>ทั้งหมด</span></button>
     <button type="button" data-catalog-group="product" data-catalog-filter="water-supply" onclick="showCatalog('product', 'water-supply', true)" class="catalog-sub-tab inline-flex items-center gap-2 px-sm py-xs sm:px-md sm:py-sm rounded-full text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant transition-all duration-200 hover:text-primary hover:shadow-sm"><span class="material-symbols-outlined text-[18px] sm:text-[20px] shrink-0">water_drop</span><span>น้ำประปา</span></button>
+    <button type="button" data-catalog-group="product" data-catalog-filter="community-water-tanks" onclick="showCatalog('product', 'community-water-tanks', true)" class="catalog-sub-tab inline-flex items-center gap-2 px-sm py-xs sm:px-md sm:py-sm rounded-full text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant transition-all duration-200 hover:text-primary hover:shadow-sm"><span class="material-symbols-outlined text-[18px] sm:text-[20px] shrink-0">water_full</span><span>ถังเก็บน้ำชุมชน</span></button>
+    <button type="button" data-catalog-group="product" data-catalog-filter="quality-water-pumps" onclick="showCatalog('product', 'quality-water-pumps', true)" class="catalog-sub-tab inline-flex items-center gap-2 px-sm py-xs sm:px-md sm:py-sm rounded-full text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant transition-all duration-200 hover:text-primary hover:shadow-sm"><span class="material-symbols-outlined text-[18px] sm:text-[20px] shrink-0">water_pump</span><span>ปั๊มน้ำคุณภาพดี</span></button>
     <button type="button" data-catalog-group="product" data-catalog-filter="clean-drinking-water" onclick="showCatalog('product', 'clean-drinking-water', true)" class="catalog-sub-tab inline-flex items-center gap-2 px-sm py-xs sm:px-md sm:py-sm rounded-full text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant transition-all duration-200 hover:text-primary hover:shadow-sm"><span class="material-symbols-outlined text-[18px] sm:text-[20px] shrink-0">local_drink</span><span>น้ำดื่มสะอาด</span></button>
     <button type="button" data-catalog-group="product" data-catalog-filter="solar-energy" onclick="showCatalog('product', 'solar-energy', true)" class="catalog-sub-tab inline-flex items-center gap-2 px-sm py-xs sm:px-md sm:py-sm rounded-full text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant transition-all duration-200 hover:text-primary hover:shadow-sm"><span class="material-symbols-outlined text-[18px] sm:text-[20px] shrink-0">solar_power</span><span>พลังงานแสงอาทิตย์</span></button>
     <button type="button" data-catalog-group="product" data-catalog-filter="electric-control-panels" onclick="showCatalog('product', 'electric-control-panels', true)" class="catalog-sub-tab inline-flex items-center gap-2 px-sm py-xs sm:px-md sm:py-sm rounded-full text-[12px] sm:text-[14px] md:text-[16px] lg:text-[20px] text-on-surface-variant transition-all duration-200 hover:text-primary hover:shadow-sm"><span class="material-symbols-outlined text-[18px] sm:text-[20px] shrink-0">electrical_services</span><span>ระบบตู้ควบคุมไฟฟ้า</span></button>
@@ -928,71 +970,165 @@ document.addEventListener('DOMContentLoaded', () => {
 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-sm md:gap-md">
 
 <!-- Water Supply Item 1 -->
-<div class="group bg-surface-container-lowest rounded-2xl border border-outline-variant overflow-hidden flex flex-col shadow-[0_8px_30px_rgba(0,0,0,0.04)] min-h-[280px] sm:min-h-[340px] md:min-h-[420px] lg:min-h-[500px]">
-<div class="flex-1 min-h-0 bg-surface-container-low relative overflow-hidden border-b-[4px] border-primary">
-<img alt="Water Filtration System" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://cdn.phototourl.com/free/2026-09-05-e9dadaa9-c4c3-4daf-8cc3-1db07e7d1346.jpg">
-</div>
-<div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
-<h3 class="text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">ถังกรองน้ำประปาผิวดิน</h3>
-<button onclick="openProductModal(
-        'ระบบถังกรองน้ำประปาผิวดิน 10Q / 15Q / 20Q / 30Q',
-        'น้ำประปา (Water Supply)',
-        '',
-        'https://cdn.phototourl.com/free/2026-09-05-e9dadaa9-c4c3-4daf-8cc3-1db07e7d1346.jpg'
-    )" class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:border-primary hover:bg-gray-100 hover:text-primary transition-colors">
-    ดูรายละเอียด
-</button>
-</div>
+<div class="group self-start bg-surface-container-lowest rounded-2xl border border-outline-variant overflow-hidden flex flex-col shadow-[0_8px_30px_rgba(0,0,0,0.04)]">
+
+    <!-- รูปสินค้า -->
+    <div class="relative w-full aspect-[1414/2000] overflow-hidden border-b-[4px] border-primary">
+        <img
+            alt="โรงกรองน้ำประปา"
+            class="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+            src="https://cdn.phototourl.com/member/2026-09-11-07e4c921-e76a-4e27-9e9b-97ea18e33247.jpg"
+        >
+    </div>
+
+    <!-- ข้อมูลสินค้า -->
+    <div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
+
+        <h3 class="whitespace-nowrap text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">
+            <span
+                class="relative inline-flex items-center align-middle
+                       bg-primary pl-2.5 pr-5 py-1.5 mr-2
+                       text-[11px] sm:text-[14px] md:text-[15px] lg:text-[17px]
+                       font-semibold leading-none tracking-wide text-white"
+                style="clip-path: polygon(0 0, 82% 0, 100% 50%, 82% 100%, 0 100%);"
+            >
+                31
+
+                <span class="absolute right-[10%] top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-white"></span>
+            </span>
+
+            โรงกรองน้ำประปา 12Q
+        </h3>
+
+        <button
+            onclick="openProductModal(
+                'โรงกรองน้ำประปา 12Q',
+                'น้ำประปา (Water Supply)',
+                '',
+                'https://cdn.phototourl.com/member/2026-09-11-07e4c921-e76a-4e27-9e9b-97ea18e33247.jpg',
+                '31'
+            )"
+            class="mt-auto w-full py-[6px] px-sm sm:py-xs sm:px-md
+                   text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm
+                   border border-outline text-on-surface rounded-full
+                   hover:border-primary hover:bg-gray-100 hover:text-primary
+                   transition-colors"
+        >
+            ดูรายละเอียด
+        </button>
+
+    </div>
 </div>
 
 <!-- Water Supply Item 2 -->
-<div class="group bg-surface-container-lowest rounded-2xl border border-outline-variant overflow-hidden flex flex-col shadow-[0_8px_30px_rgba(0,0,0,0.04)] min-h-[280px] sm:min-h-[340px] md:min-h-[420px] lg:min-h-[500px]">
-<div class="flex-1 min-h-0 bg-surface-container-low relative overflow-hidden border-b-[4px] border-primary">
-<img alt="Water Filtration System" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://cdn.phototourl.com/free/2026-09-05-6e33a887-1a29-4397-a088-e61bed325f50.jpg">
-</div>
-<div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
-<h3 class="text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">ถังกรองน้ำประปาบาดาล</h3>
-<button onclick="openProductModal(
-        'ระบบถังกรองน้ำประปาบาดาล 10Q/ 15Q / 20Q/ 30Q',
-        'น้ำประปา (Water Supply)',
-        '',
-        'https://cdn.phototourl.com/free/2026-09-05-6e33a887-1a29-4397-a088-e61bed325f50.jpg'
-    )" class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:border-primary hover:bg-gray-100 hover:text-primary transition-colors">
-    ดูรายละเอียด
-</button>
-</div>
+<div class="group self-start bg-surface-container-lowest rounded-2xl border border-outline-variant overflow-hidden flex flex-col shadow-[0_8px_30px_rgba(0,0,0,0.04)]">
+
+    <!-- รูปสินค้า -->
+    <div class="relative w-full aspect-[1414/2000] overflow-hidden border-b-[4px] border-primary">
+        <img
+            alt="ถังกรองน้ำประปาผิวดิน"
+            class="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+            src="https://cdn.phototourl.com/free/2026-09-05-e9dadaa9-c4c3-4daf-8cc3-1db07e7d1346.jpg"
+        >
+    </div>
+
+    <!-- ข้อมูลสินค้า -->
+    <div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
+
+        <h3 class="whitespace-nowrap text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">
+            <span
+                class="relative inline-flex items-center align-middle
+                       bg-primary pl-2.5 pr-5 py-1.5 mr-2
+                       text-[11px] sm:text-[14px] md:text-[15px] lg:text-[17px]
+                       font-semibold leading-none tracking-wide text-white"
+                style="clip-path: polygon(0 0, 82% 0, 100% 50%, 82% 100%, 0 100%);"
+            >
+                41
+
+                <span class="absolute right-[10%] top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-white"></span>
+            </span>
+
+            ถังกรองน้ำประปาผิวดิน
+        </h3>
+
+        <button
+            onclick="openProductModal(
+                'ระบบถังกรองน้ำประปาผิวดิน 10Q / 15Q / 20Q / 30Q',
+                'น้ำประปา (Water Supply)',
+                '',
+                'https://cdn.phototourl.com/free/2026-09-05-e9dadaa9-c4c3-4daf-8cc3-1db07e7d1346.jpg',
+                '41'
+            )"
+            class="mt-auto w-full py-[6px] px-sm sm:py-xs sm:px-md
+                   text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm
+                   border border-outline text-on-surface rounded-full
+                   hover:border-primary hover:bg-gray-100 hover:text-primary
+                   transition-colors"
+        >
+            ดูรายละเอียด
+        </button>
+
+    </div>
 </div>
 
 <!-- Water Supply Item 3 -->
 <div class="group bg-surface-container-lowest rounded-2xl border border-outline-variant overflow-hidden flex flex-col shadow-[0_8px_30px_rgba(0,0,0,0.04)] min-h-[280px] sm:min-h-[340px] md:min-h-[420px] lg:min-h-[500px]">
 <div class="flex-1 min-h-0 bg-surface-container-low relative overflow-hidden border-b-[4px] border-primary">
-<img alt="Submersible Pumps" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://placehold.co/100x100/png?text=LOGO">
+<img alt="Water Filtration System" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://cdn.phototourl.com/free/2026-09-05-6e33a887-1a29-4397-a088-e61bed325f50.jpg">
 </div>
 <div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
-<h3 class="text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">โรงกรองน้ำประปา</h3>
+<h3 class="whitespace-nowrap text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">
+    <span
+        class="relative inline-flex items-center align-middle
+               bg-primary pl-2.5 pr-5 py-1.5 mr-2
+               text-[11px] sm:text-[14px] md:text-[15px] lg:text-[17px]
+               font-semibold leading-none tracking-wide text-white"
+        style="clip-path: polygon(0 0, 82% 0, 100% 50%, 82% 100%, 0 100%);"
+    >
+        42
+        <span class="absolute right-[10%] top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-white"></span>
+    </span>ถังกรองน้ำประปาบาดาล
+</h3>
+
 <button onclick="openProductModal(
-        'โรงกรองน้ำประปา 12Q',
+        'ระบบถังกรองน้ำประปาบาดาล 10Q/ 15Q / 20Q/ 30Q',
         'น้ำประปา (Water Supply)',
         '',
-        'https://placehold.co/100x100/png?text=LOGO'
+        'https://cdn.phototourl.com/free/2026-09-05-6e33a887-1a29-4397-a088-e61bed325f50.jpg',
+        '42'
     )" class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:border-primary hover:bg-gray-100 hover:text-primary transition-colors">
     ดูรายละเอียด
 </button>
 </div>
 </div>
 
+
+
 <!-- Water Supply Item 4 -->
-<div class="group bg-surface-container-lowest rounded-2xl border border-outline-variant overflow-hidden flex flex-col shadow-[0_8px_30px_rgba(0,0,0,0.04)] min-h-[280px] sm:min-h-[340px] md:min-h-[420px] lg:min-h-[500px]">
+<div class="hidden bg-surface-container-lowest rounded-2xl border border-outline-variant overflow-hidden flex flex-col shadow-[0_8px_30px_rgba(0,0,0,0.04)] min-h-[280px] sm:min-h-[340px] md:min-h-[420px] lg:min-h-[500px]">
 <div class="flex-1 min-h-0 bg-surface-container-low relative overflow-hidden border-b-[4px] border-primary">
 <img alt="Submersible Pumps" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://placehold.co/100x100/png?text=LOGO">
 </div>
 <div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
-<h3 class="text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">ถังเก็บน้ำ</h3>
+<h3 class="whitespace-nowrap text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">
+    <span
+        class="relative inline-flex items-center align-middle
+               bg-primary pl-2.5 pr-5 py-1.5 mr-2
+               text-[11px] sm:text-[14px] md:text-[15px] lg:text-[17px]
+               font-semibold leading-none tracking-wide text-white"
+        style="clip-path: polygon(0 0, 82% 0, 100% 50%, 82% 100%, 0 100%);"
+    >
+        44
+        <span class="absolute right-[10%] top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-white"></span>
+    </span>ถังเก็บน้ำ
+</h3>
+
 <button onclick="openProductModal(
         'ถังเก็บน้ำชุมชน / ถังไฟเบอร์ / ถังPVC / ถังเก็บน้ำสแตนเลส',
         'น้ำประปา (Water Supply)',
         '',
-        'https://placehold.co/100x100/png?text=LOGO'
+        'https://placehold.co/100x100/png?text=LOGO',
+        '44'
     )" class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:border-primary hover:bg-gray-100 hover:text-primary transition-colors">
     ดูรายละเอียด
 </button>
@@ -1000,17 +1136,30 @@ document.addEventListener('DOMContentLoaded', () => {
 </div>
 
 <!-- Water Supply Item 5 -->
-<div class="group bg-surface-container-lowest rounded-2xl border border-outline-variant overflow-hidden flex flex-col shadow-[0_8px_30px_rgba(0,0,0,0.04)] min-h-[280px] sm:min-h-[340px] md:min-h-[420px] lg:min-h-[500px]">
+<div class="hidden bg-surface-container-lowest rounded-2xl border border-outline-variant overflow-hidden flex flex-col shadow-[0_8px_30px_rgba(0,0,0,0.04)] min-h-[280px] sm:min-h-[340px] md:min-h-[420px] lg:min-h-[500px]">
 <div class="flex-1 min-h-0 bg-surface-container-low relative overflow-hidden border-b-[4px] border-primary">
 <img alt="Submersible Pumps" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://placehold.co/100x100/png?text=LOGO">
 </div>
 <div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
-<h3 class="text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">ปั๊มน้ำคุณภาพดี</h3>
+<h3 class="whitespace-nowrap text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">
+    <span
+        class="relative inline-flex items-center align-middle
+               bg-primary pl-2.5 pr-5 py-1.5 mr-2
+               text-[11px] sm:text-[14px] md:text-[15px] lg:text-[17px]
+               font-semibold leading-none tracking-wide text-white"
+        style="clip-path: polygon(0 0, 82% 0, 100% 50%, 82% 100%, 0 100%);"
+    >
+        45
+        <span class="absolute right-[10%] top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-white"></span>
+    </span>ปั๊มน้ำคุณภาพดี
+</h3>
+
 <button onclick="openProductModal(
         'ปั๊มน้ำคุณภาพดี / ปั๊มซับเมอร์พร้อมตู้ควบคุม / ปั๊มหอยโข่ง / ปั๊มส่งน้ำ / ชุดซ่อมปรับปรุงระบบประปาหมู่บ้านเดิม',
         'น้ำประปา (Water Supply)',
         '',
-        'https://placehold.co/100x100/png?text=LOGO'
+        'https://placehold.co/100x100/png?text=LOGO',
+        '45'
     )" class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:border-primary hover:bg-gray-100 hover:text-primary transition-colors">
     ดูรายละเอียด
 </button>
@@ -1019,7 +1168,70 @@ document.addEventListener('DOMContentLoaded', () => {
 </div>
 </div>
 
-<!-- Category 2: น้ำดื่มสะอาด (Clean Drinking Water) -->
+<!-- Category 2: ถังเก็บน้ำชุมชน (Community Water Tanks) -->
+<div id="community-water-tanks" data-catalog-panel="product" class="catalog-panel mb-xl">
+<h3 class="text-[18px] sm:text-[20px] md:text-[26px] lg:text-[30px] text-on-surface mb-md">ถังเก็บน้ำชุมชน (Community Water Tanks)</h3>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-sm md:gap-md">
+
+<!-- Community Water Tank Mockup Items -->
+<div class="group bg-surface-container-lowest rounded-2xl border border-outline-variant overflow-hidden flex flex-col shadow-[0_8px_30px_rgba(0,0,0,0.04)] min-h-[280px] sm:min-h-[340px] md:min-h-[420px] lg:min-h-[500px]">
+<div class="flex-1 min-h-0 bg-surface-container-low relative overflow-hidden border-b-[4px] border-primary"><img alt="ถังไฟเบอร์" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://placehold.co/100x100/png?text=LOGO"></div>
+<div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
+<h3 class="whitespace-nowrap text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm"><span class="relative inline-flex items-center align-middle bg-primary pl-2.5 pr-5 py-1.5 mr-2 text-[11px] sm:text-[14px] md:text-[15px] lg:text-[17px] font-semibold leading-none tracking-wide text-white" style="clip-path: polygon(0 0, 82% 0, 100% 50%, 82% 100%, 0 100%);">8.1<span class="absolute right-[10%] top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-white"></span></span>ถังไฟเบอร์</h3>
+<button onclick="openProductModal('ถังไฟเบอร์','ถังเก็บน้ำชุมชน (Community Water Tanks)','','https://placehold.co/100x100/png?text=LOGO','8.1')" class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:border-primary hover:bg-gray-100 hover:text-primary transition-colors">ดูรายละเอียด</button>
+</div></div>
+
+<div class="group bg-surface-container-lowest rounded-2xl border border-outline-variant overflow-hidden flex flex-col shadow-[0_8px_30px_rgba(0,0,0,0.04)] min-h-[280px] sm:min-h-[340px] md:min-h-[420px] lg:min-h-[500px]">
+<div class="flex-1 min-h-0 bg-surface-container-low relative overflow-hidden border-b-[4px] border-primary"><img alt="ถังPVC" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://placehold.co/100x100/png?text=LOGO"></div>
+<div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
+<h3 class="whitespace-nowrap text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm"><span class="relative inline-flex items-center align-middle bg-primary pl-2.5 pr-5 py-1.5 mr-2 text-[11px] sm:text-[14px] md:text-[15px] lg:text-[17px] font-semibold leading-none tracking-wide text-white" style="clip-path: polygon(0 0, 82% 0, 100% 50%, 82% 100%, 0 100%);">8.2<span class="absolute right-[10%] top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-white"></span></span>ถังPVC</h3>
+<button onclick="openProductModal('ถังPVC','ถังเก็บน้ำชุมชน (Community Water Tanks)','','https://placehold.co/100x100/png?text=LOGO','8.2')" class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:border-primary hover:bg-gray-100 hover:text-primary transition-colors">ดูรายละเอียด</button>
+</div></div>
+
+<div class="group bg-surface-container-lowest rounded-2xl border border-outline-variant overflow-hidden flex flex-col shadow-[0_8px_30px_rgba(0,0,0,0.04)] min-h-[280px] sm:min-h-[340px] md:min-h-[420px] lg:min-h-[500px]">
+<div class="flex-1 min-h-0 bg-surface-container-low relative overflow-hidden border-b-[4px] border-primary"><img alt="ถังเก็บน้ำสแตนเลส" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://placehold.co/100x100/png?text=LOGO"></div>
+<div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
+<h3 class="whitespace-nowrap text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm"><span class="relative inline-flex items-center align-middle bg-primary pl-2.5 pr-5 py-1.5 mr-2 text-[11px] sm:text-[14px] md:text-[15px] lg:text-[17px] font-semibold leading-none tracking-wide text-white" style="clip-path: polygon(0 0, 82% 0, 100% 50%, 82% 100%, 0 100%);">8.3<span class="absolute right-[10%] top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-white"></span></span>ถังเก็บน้ำสแตนเลส</h3>
+<button onclick="openProductModal('ถังเก็บน้ำสแตนเลส','ถังเก็บน้ำชุมชน (Community Water Tanks)','','https://placehold.co/100x100/png?text=LOGO','8.3')" class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:border-primary hover:bg-gray-100 hover:text-primary transition-colors">ดูรายละเอียด</button>
+</div></div>
+</div></div>
+
+<!-- Category 3: ปั๊มน้ำคุณภาพดี (Quality Water Pumps) -->
+<div id="quality-water-pumps" data-catalog-panel="product" class="catalog-panel mb-xl">
+<h3 class="text-[18px] sm:text-[20px] md:text-[26px] lg:text-[30px] text-on-surface mb-md">ปั๊มน้ำคุณภาพดี (Quality Water Pumps)</h3>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-sm md:gap-md">
+
+<!-- Quality Water Pump Mockup Items -->
+<div class="group bg-surface-container-lowest rounded-2xl border border-outline-variant overflow-hidden flex flex-col shadow-[0_8px_30px_rgba(0,0,0,0.04)] min-h-[280px] sm:min-h-[340px] md:min-h-[420px] lg:min-h-[500px]">
+<div class="flex-1 min-h-0 bg-surface-container-low relative overflow-hidden border-b-[4px] border-primary"><img alt="ปั๊มซับเมอร์ส" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://placehold.co/100x100/png?text=LOGO"></div>
+<div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
+<h3 class="whitespace-nowrap text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm"><span class="relative inline-flex items-center align-middle bg-primary pl-2.5 pr-5 py-1.5 mr-2 text-[11px] sm:text-[14px] md:text-[15px] lg:text-[17px] font-semibold leading-none tracking-wide text-white" style="clip-path: polygon(0 0, 82% 0, 100% 50%, 82% 100%, 0 100%);">9.1<span class="absolute right-[10%] top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-white"></span></span>ปั๊มซับเมอร์สพร้อมตู้ควบคุม</h3>
+<button onclick="openProductModal('ปั๊มซับเมอร์สพร้อมตู้ควบคุม','ปั๊มน้ำคุณภาพดี (Quality Water Pumps)','','https://placehold.co/100x100/png?text=LOGO','9.1')" class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:border-primary hover:bg-gray-100 hover:text-primary transition-colors">ดูรายละเอียด</button>
+</div></div>
+
+<div class="group bg-surface-container-lowest rounded-2xl border border-outline-variant overflow-hidden flex flex-col shadow-[0_8px_30px_rgba(0,0,0,0.04)] min-h-[280px] sm:min-h-[340px] md:min-h-[420px] lg:min-h-[500px]">
+<div class="flex-1 min-h-0 bg-surface-container-low relative overflow-hidden border-b-[4px] border-primary"><img alt="ปั๊มหอยโข่ง" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://placehold.co/100x100/png?text=LOGO"></div>
+<div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
+<h3 class="whitespace-nowrap text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm"><span class="relative inline-flex items-center align-middle bg-primary pl-2.5 pr-5 py-1.5 mr-2 text-[11px] sm:text-[14px] md:text-[15px] lg:text-[17px] font-semibold leading-none tracking-wide text-white" style="clip-path: polygon(0 0, 82% 0, 100% 50%, 82% 100%, 0 100%);">9.2<span class="absolute right-[10%] top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-white"></span></span>ปั๊มหอยโข่ง</h3>
+<button onclick="openProductModal('ปั๊มหอยโข่ง','ปั๊มน้ำคุณภาพดี (Quality Water Pumps)','','https://placehold.co/100x100/png?text=LOGO','9.2')" class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:border-primary hover:bg-gray-100 hover:text-primary transition-colors">ดูรายละเอียด</button>
+</div></div>
+
+<div class="group bg-surface-container-lowest rounded-2xl border border-outline-variant overflow-hidden flex flex-col shadow-[0_8px_30px_rgba(0,0,0,0.04)] min-h-[280px] sm:min-h-[340px] md:min-h-[420px] lg:min-h-[500px]">
+<div class="flex-1 min-h-0 bg-surface-container-low relative overflow-hidden border-b-[4px] border-primary"><img alt="ปั๊มส่งน้ำ" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://placehold.co/100x100/png?text=LOGO"></div>
+<div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
+<h3 class="whitespace-nowrap text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm"><span class="relative inline-flex items-center align-middle bg-primary pl-2.5 pr-5 py-1.5 mr-2 text-[11px] sm:text-[14px] md:text-[15px] lg:text-[17px] font-semibold leading-none tracking-wide text-white" style="clip-path: polygon(0 0, 82% 0, 100% 50%, 82% 100%, 0 100%);">9.3<span class="absolute right-[10%] top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-white"></span></span>ปั๊มส่งน้ำ</h3>
+<button onclick="openProductModal('ปั๊มส่งน้ำ','ปั๊มน้ำคุณภาพดี (Quality Water Pumps)','','https://placehold.co/100x100/png?text=LOGO','9.3')" class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:border-primary hover:bg-gray-100 hover:text-primary transition-colors">ดูรายละเอียด</button>
+</div></div>
+
+<div class="group bg-surface-container-lowest rounded-2xl border border-outline-variant overflow-hidden flex flex-col shadow-[0_8px_30px_rgba(0,0,0,0.04)] min-h-[280px] sm:min-h-[340px] md:min-h-[420px] lg:min-h-[500px]">
+<div class="flex-1 min-h-0 bg-surface-container-low relative overflow-hidden border-b-[4px] border-primary"><img alt="ปั๊มส่งน้ำ" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://placehold.co/100x100/png?text=LOGO"></div>
+<div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
+<h3 class="whitespace-nowrap text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm"><span class="relative inline-flex items-center align-middle bg-primary pl-2.5 pr-5 py-1.5 mr-2 text-[11px] sm:text-[14px] md:text-[15px] lg:text-[17px] font-semibold leading-none tracking-wide text-white" style="clip-path: polygon(0 0, 82% 0, 100% 50%, 82% 100%, 0 100%);">9.4<span class="absolute right-[10%] top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-white"></span></span>ชุดซ่อมปรับปรุงระบบประปาหมู่บ้านเดิม</h3>
+<button onclick="openProductModal('ชุดซ่อมปรับปรุงระบบประปาหมู่บ้านเดิม','ปั๊มน้ำคุณภาพดี (Quality Water Pumps)','','https://placehold.co/100x100/png?text=LOGO','9.4')" class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:border-primary hover:bg-gray-100 hover:text-primary transition-colors">ดูรายละเอียด</button>
+</div></div>
+</div></div>
+
+<!-- Category 4: น้ำดื่มสะอาด (Clean Drinking Water) -->
 <div id="clean-drinking-water" data-catalog-panel="product" class="catalog-panel mb-xl">
 <h3 class="text-[18px] sm:text-[20px] md:text-[26px] lg:text-[30px] text-on-surface mb-md">น้ำดื่มสะอาด (Clean Drinking Water)</h3>
 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-sm md:gap-md">
@@ -1030,13 +1242,26 @@ document.addEventListener('DOMContentLoaded', () => {
 <img alt="RO Production Machines" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://cdn.phototourl.com/member/2026-09-05-e0b4507e-de56-43ef-968e-d8141527b5a4.jpg">
 </div>
 <div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
-<h3 class="text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">เครื่องกรองน้ำดื่ม RO</h3>
+<h3 class="whitespace-nowrap text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">
+    <span
+        class="relative inline-flex items-center align-middle
+               bg-primary pl-2.5 pr-5 py-1.5 mr-2
+               text-[11px] sm:text-[14px] md:text-[15px] lg:text-[17px]
+               font-semibold leading-none tracking-wide text-white"
+        style="clip-path: polygon(0 0, 82% 0, 100% 50%, 82% 100%, 0 100%);"
+    >
+        5.1
+        <span class="absolute right-[10%] top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-white"></span>
+    </span>เครื่องกรองน้ำดื่มRO 12Q
+</h3>
+
 <button
     onclick="openProductModal(
-        'เครื่องกรองน้ำดื่ม RO 12Q / เครื่องกรองน้ำดื่ม RO 24Q',
+        'เครื่องกรองน้ำดื่มRO 12Q',
         'น้ำดื่มสะอาด (Clean Drinking Water)',
         '',
-        'https://cdn.phototourl.com/member/2026-09-05-e0b4507e-de56-43ef-968e-d8141527b5a4.jpg'
+        'https://cdn.phototourl.com/member/2026-09-05-e0b4507e-de56-43ef-968e-d8141527b5a4.jpg',
+        '5.1'
     )"
     class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:border-primary hover:bg-gray-100 hover:text-primary transition-colors">
     ดูรายละเอียด
@@ -1050,13 +1275,26 @@ document.addEventListener('DOMContentLoaded', () => {
 <img alt="UV Sterilization Systems" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://placehold.co/100x100/png?text=LOGO">
 </div>
 <div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
-<h3 class="text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">*******************</h3>
+<h3 class="whitespace-nowrap text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">
+    <span
+        class="relative inline-flex items-center align-middle
+               bg-primary pl-2.5 pr-5 py-1.5 mr-2
+               text-[11px] sm:text-[14px] md:text-[15px] lg:text-[17px]
+               font-semibold leading-none tracking-wide text-white"
+        style="clip-path: polygon(0 0, 82% 0, 100% 50%, 82% 100%, 0 100%);"
+    >
+        5.2
+        <span class="absolute right-[10%] top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-white"></span>
+    </span>เครื่องกรองน้ำดื่มRO 24Q
+</h3>
+
 <button
     onclick="openProductModal(
-        '*******************',
+        'เครื่องกรองน้ำดื่มRO 24Q',
         'น้ำดื่มสะอาด (Clean Drinking Water)',
         '.',
-        'https://placehold.co/100x100/png?text=LOGO'
+        'https://placehold.co/100x100/png?text=LOGO',
+        '5.2'
     )"
     class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:border-primary hover:bg-gray-100 hover:text-primary transition-colors">
     ดูรายละเอียด
@@ -1077,13 +1315,26 @@ document.addEventListener('DOMContentLoaded', () => {
 <img alt="Village Solar Water Systems" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://placehold.co/100x100/png?text=LOGO">
 </div>
 <div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
-<h3 class="text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">ระบบโซล่าเซลล์ประปาหมู่บ้าน</h3>
+<h3 class="whitespace-nowrap text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">
+    <span
+        class="relative inline-flex items-center align-middle
+               bg-primary pl-2.5 pr-5 py-1.5 mr-2
+               text-[11px] sm:text-[14px] md:text-[15px] lg:text-[17px]
+               font-semibold leading-none tracking-wide text-white"
+        style="clip-path: polygon(0 0, 82% 0, 100% 50%, 82% 100%, 0 100%);"
+    >
+        11
+        <span class="absolute right-[10%] top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-white"></span>
+    </span>ระบบโซล่าเซลล์ประปาหมู่บ้าน
+</h3>
+
 <button
     onclick="openProductModal(
         'ระบบโซล่าเซลล์ประปาหมู่บ้าน',
         'พลังงานแสงอาทิตย์ (Solar Energy)',
         '',
-        'https://placehold.co/100x100/png?text=LOGO'
+        'https://placehold.co/100x100/png?text=LOGO',
+        '11'
     )"
     class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:border-primary hover:bg-gray-100 hover:text-primary transition-colors">
     ดูรายละเอียด
@@ -1097,13 +1348,26 @@ document.addEventListener('DOMContentLoaded', () => {
 <img alt="Solar Pump Inverters" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://placehold.co/100x100/png?text=LOGO">
 </div>
 <div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
-<h3 class="text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">ระบบโซล่าเซลล์ออนกริต</h3>
+<h3 class="whitespace-nowrap text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">
+    <span
+        class="relative inline-flex items-center align-middle
+               bg-primary pl-2.5 pr-5 py-1.5 mr-2
+               text-[11px] sm:text-[14px] md:text-[15px] lg:text-[17px]
+               font-semibold leading-none tracking-wide text-white"
+        style="clip-path: polygon(0 0, 82% 0, 100% 50%, 82% 100%, 0 100%);"
+    >
+        12
+        <span class="absolute right-[10%] top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-white"></span>
+    </span>ระบบโซล่าเซลล์ออนกริต
+</h3>
+
 <button
     onclick="openProductModal(
         'ระบบโซล่าเซลล์ออนกริต',
         'พลังงานแสงอาทิตย์ (Solar Energy)',
         '',
-        'https://placehold.co/100x100/png?text=LOGO'
+        'https://placehold.co/100x100/png?text=LOGO',
+        '12'
     )"
     class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:border-primary hover:bg-gray-100 hover:text-primary transition-colors">
     ดูรายละเอียด
@@ -1117,13 +1381,26 @@ document.addEventListener('DOMContentLoaded', () => {
 <img alt="Solar Pump Inverters" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://cdn.phototourl.com/free/2026-09-05-cea35dfa-7723-4b65-81ea-742a547a952d.jpg">
 </div>
 <div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
-<h3 class="text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">ระบบสูบน้ำเพื่อการเกษตรเคลื่อนที่</h3>
+<h3 class="whitespace-nowrap text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">
+    <span
+        class="relative inline-flex items-center align-middle
+               bg-primary pl-2.5 pr-5 py-1.5 mr-2
+               text-[11px] sm:text-[14px] md:text-[15px] lg:text-[17px]
+               font-semibold leading-none tracking-wide text-white"
+        style="clip-path: polygon(0 0, 82% 0, 100% 50%, 82% 100%, 0 100%);"
+    >
+        13
+        <span class="absolute right-[10%] top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-white"></span>
+    </span>ระบบสูบน้ำเพื่อการเกษตรเคลื่อนที่
+</h3>
+
 <button
     onclick="openProductModal(
         'ระบบสูบน้ำเพื่อการเกษตรเคลื่อนที่ / ปั๊มโซล่าเซลล์',
         'พลังงานแสงอาทิตย์ (Solar Energy)',
         '',
-        'https://cdn.phototourl.com/free/2026-09-05-cea35dfa-7723-4b65-81ea-742a547a952d.jpg'
+        'https://cdn.phototourl.com/free/2026-09-05-cea35dfa-7723-4b65-81ea-742a547a952d.jpg',
+        '13'
     )"
     class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:border-primary hover:bg-gray-100 hover:text-primary transition-colors">
     ดูรายละเอียด
@@ -1137,13 +1414,26 @@ document.addEventListener('DOMContentLoaded', () => {
 <img alt="Solar Pump Inverters" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://placehold.co/100x100/png?text=LOGO">
 </div>
 <div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
-<h3 class="text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">Solar Pump Inverter</h3>
+<h3 class="whitespace-nowrap text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">
+    <span
+        class="relative inline-flex items-center align-middle
+               bg-primary pl-2.5 pr-5 py-1.5 mr-2
+               text-[11px] sm:text-[14px] md:text-[15px] lg:text-[17px]
+               font-semibold leading-none tracking-wide text-white"
+        style="clip-path: polygon(0 0, 82% 0, 100% 50%, 82% 100%, 0 100%);"
+    >
+        14
+        <span class="absolute right-[10%] top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-white"></span>
+    </span>Solar Pump Inverter
+</h3>
+
 <button
     onclick="openProductModal(
         'Solar Pump Inverter',
         'พลังงานแสงอาทิตย์ (Solar Energy)',
         '',
-        'https://placehold.co/100x100/png?text=LOGO'
+        'https://placehold.co/100x100/png?text=LOGO',
+        '14'
     )"
     class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:border-primary hover:bg-gray-100 hover:text-primary transition-colors">
     ดูรายละเอียด
@@ -1165,13 +1455,26 @@ document.addEventListener('DOMContentLoaded', () => {
 <img alt="Village Solar Water Systems" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://placehold.co/100x100/png?text=LOGO">
 </div>
 <div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
-<h3 class="text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">ตู้ควบคุมปั๊มน้ำ</h3>
+<h3 class="whitespace-nowrap text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">
+    <span
+        class="relative inline-flex items-center align-middle
+               bg-primary pl-2.5 pr-5 py-1.5 mr-2
+               text-[11px] sm:text-[14px] md:text-[15px] lg:text-[17px]
+               font-semibold leading-none tracking-wide text-white"
+        style="clip-path: polygon(0 0, 82% 0, 100% 50%, 82% 100%, 0 100%);"
+    >
+        7.1
+        <span class="absolute right-[10%] top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-white"></span>
+    </span>ตู้ควบคุมปั๊มน้ำ
+</h3>
+
 <button
     onclick="openProductModal(
         'ตู้ควบคุมปั๊มน้ำขนาด 3 แรง, 5 แรง, 10 แรง, 40 แรง',
         'ระบบตู้ควบคุมไฟฟ้า',
         '',
-        'https://placehold.co/100x100/png?text=LOGO'
+        'https://placehold.co/100x100/png?text=LOGO',
+        '7.1'
     )"
     class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:border-primary hover:bg-gray-100 hover:text-primary transition-colors">
     ดูรายละเอียด
@@ -1185,13 +1488,26 @@ document.addEventListener('DOMContentLoaded', () => {
 <img alt="Solar Pump Inverters" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://placehold.co/100x100/png?text=LOGO">
 </div>
 <div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
-<h3 class="text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">เครื่องกำเนิดไฟฟ้าสำรอง</h3>
+<h3 class="whitespace-nowrap text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">
+    <span
+        class="relative inline-flex items-center align-middle
+               bg-primary pl-2.5 pr-5 py-1.5 mr-2
+               text-[11px] sm:text-[14px] md:text-[15px] lg:text-[17px]
+               font-semibold leading-none tracking-wide text-white"
+        style="clip-path: polygon(0 0, 82% 0, 100% 50%, 82% 100%, 0 100%);"
+    >
+        7.2
+        <span class="absolute right-[10%] top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-white"></span>
+    </span>เครื่องกำเนิดไฟฟ้าสำรอง
+</h3>
+
 <button
     onclick="openProductModal(
         'เครื่องกำเนิดไฟฟ้าสำรอง',
         'พลังงานแสงอาทิตย์ (Solar Energy)',
         '*******************',
-        'https://placehold.co/100x100/png?text=LOGO'
+        'https://placehold.co/100x100/png?text=LOGO',
+        '7.2'
     )"
     class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:border-primary hover:bg-gray-100 hover:text-primary transition-colors">
     ดูรายละเอียด
@@ -1205,13 +1521,26 @@ document.addEventListener('DOMContentLoaded', () => {
 <img alt="Solar Pump Inverters" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://placehold.co/100x100/png?text=LOGO">
 </div>
 <div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
-<h3 class="text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">ระดับควบคุมระดับน้ำ</h3>
+<h3 class="whitespace-nowrap text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">
+    <span
+        class="relative inline-flex items-center align-middle
+               bg-primary pl-2.5 pr-5 py-1.5 mr-2
+               text-[11px] sm:text-[14px] md:text-[15px] lg:text-[17px]
+               font-semibold leading-none tracking-wide text-white"
+        style="clip-path: polygon(0 0, 82% 0, 100% 50%, 82% 100%, 0 100%);"
+    >
+        7.3
+        <span class="absolute right-[10%] top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-white"></span>
+    </span>ระดับควบคุมระดับน้ำ
+</h3>
+
 <button
     onclick="openProductModal(
         'ระดับควบคุมระดับน้ำ',
         'พลังงานแสงอาทิตย์ (Solar Energy)',
         '',
-        'https://placehold.co/100x100/png?text=LOGO'
+        'https://placehold.co/100x100/png?text=LOGO',
+        '7.3'
     )"
     class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:border-primary hover:bg-gray-100 hover:text-primary transition-colors">
     ดูรายละเอียด
@@ -1225,13 +1554,26 @@ document.addEventListener('DOMContentLoaded', () => {
 <img alt="Solar Pump Inverters" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://placehold.co/100x100/png?text=LOGO">
 </div>
 <div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
-<h3 class="text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">Flow Meter ระบบน้ำประปา</h3>
+<h3 class="whitespace-nowrap text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">
+    <span
+        class="relative inline-flex items-center align-middle
+               bg-primary pl-2.5 pr-5 py-1.5 mr-2
+               text-[11px] sm:text-[14px] md:text-[15px] lg:text-[17px]
+               font-semibold leading-none tracking-wide text-white"
+        style="clip-path: polygon(0 0, 82% 0, 100% 50%, 82% 100%, 0 100%);"
+    >
+        7.4
+        <span class="absolute right-[10%] top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-white"></span>
+    </span>Flow Meter ระบบน้ำประปา
+</h3>
+
 <button
     onclick="openProductModal(
         'Flow Meter ระบบน้ำประปา',
         'พลังงานแสงอาทิตย์ (Solar Energy)',
         '',
-        'https://placehold.co/100x100/png?text=LOGO'
+        'https://placehold.co/100x100/png?text=LOGO',
+        '7.4'
     )"
     class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:border-primary hover:bg-gray-100 hover:text-primary transition-colors">
     ดูรายละเอียด
@@ -1245,13 +1587,26 @@ document.addEventListener('DOMContentLoaded', () => {
 <img alt="Solar Pump Inverters" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://placehold.co/100x100/png?text=LOGO">
 </div>
 <div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
-<h3 class="text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">เครื่องวัดคุณภาพน้ำ</h3>
+<h3 class="whitespace-nowrap text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">
+    <span
+        class="relative inline-flex items-center align-middle
+               bg-primary pl-2.5 pr-5 py-1.5 mr-2
+               text-[11px] sm:text-[14px] md:text-[15px] lg:text-[17px]
+               font-semibold leading-none tracking-wide text-white"
+        style="clip-path: polygon(0 0, 82% 0, 100% 50%, 82% 100%, 0 100%);"
+    >
+        7.5
+        <span class="absolute right-[10%] top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-white"></span>
+    </span>เครื่องวัดคุณภาพน้ำ
+</h3>
+
 <button
     onclick="openProductModal(
         'เครื่องวัดคุณภาพน้ำ',
         'พลังงานแสงอาทิตย์ (Solar Energy)',
         '',
-        'https://placehold.co/100x100/png?text=LOGO'
+        'https://placehold.co/100x100/png?text=LOGO',
+        '7.5'
     )"
     class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:border-primary hover:bg-gray-100 hover:text-primary transition-colors">
     ดูรายละเอียด
@@ -1265,13 +1620,26 @@ document.addEventListener('DOMContentLoaded', () => {
 <img alt="Solar Pump Inverters" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://placehold.co/100x100/png?text=LOGO">
 </div>
 <div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
-<h3 class="text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">เครื่องจ่ายคลอรีนอัตโนมัติ<h3>
+<h3 class="whitespace-nowrap text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">
+    <span
+        class="relative inline-flex items-center align-middle
+               bg-primary pl-2.5 pr-5 py-1.5 mr-2
+               text-[11px] sm:text-[14px] md:text-[15px] lg:text-[17px]
+               font-semibold leading-none tracking-wide text-white"
+        style="clip-path: polygon(0 0, 82% 0, 100% 50%, 82% 100%, 0 100%);"
+    >
+        7.6
+        <span class="absolute right-[10%] top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-white"></span>
+    </span>เครื่องจ่ายคลอรีนอัตโนมัติ
+</h3>
+
 <button
     onclick="openProductModal(
         'เครื่องจ่ายคลอรีนอัตโนมัติ',
         'พลังงานแสงอาทิตย์ (Solar Energy)',
         '',
-        'https://placehold.co/100x100/png?text=LOGO'
+        'https://placehold.co/100x100/png?text=LOGO',
+        '7.6'
     )"
     class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:border-primary hover:bg-gray-100 hover:text-primary transition-colors">
     ดูรายละเอียด
@@ -1293,13 +1661,26 @@ document.addEventListener('DOMContentLoaded', () => {
 <img alt="RO Production Machines" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://placehold.co/100x100/png?text=LOGO">
 </div>
 <div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
-<h3 class="text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">กล้องวรปิด CCTV</h3>
+<h3 class="whitespace-nowrap text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">
+    <span
+        class="relative inline-flex items-center align-middle
+               bg-primary pl-2.5 pr-5 py-1.5 mr-2
+               text-[11px] sm:text-[14px] md:text-[15px] lg:text-[17px]
+               font-semibold leading-none tracking-wide text-white"
+        style="clip-path: polygon(0 0, 82% 0, 100% 50%, 82% 100%, 0 100%);"
+    >
+        81
+        <span class="absolute right-[10%] top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-white"></span>
+    </span>กล้องวรปิด CCTV
+</h3>
+
 <button
     onclick="openProductModal(
         'กล้องวรปิด CCTV / เสากระจายเสียงไร้สาย / เสาไฟเตือนจราจร / ไฟถนน Solar street Light',
         'เมืองปลอดภัย',
         '',
-        'https://placehold.co/100x100/png?text=LOGO'
+        'https://placehold.co/100x100/png?text=LOGO',
+        '81'
     )"
     class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:border-primary hover:bg-gray-100 hover:text-primary transition-colors">
     ดูรายละเอียด
@@ -1321,13 +1702,26 @@ document.addEventListener('DOMContentLoaded', () => {
 <img alt="RO Production Machines" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://placehold.co/100x100/png?text=LOGO">
 </div>
 <div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
-<h3 class="text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">**********</h3>
+<h3 class="whitespace-nowrap text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">
+    <span
+        class="relative inline-flex items-center align-middle
+               bg-primary pl-2.5 pr-5 py-1.5 mr-2
+               text-[11px] sm:text-[14px] md:text-[15px] lg:text-[17px]
+               font-semibold leading-none tracking-wide text-white"
+        style="clip-path: polygon(0 0, 82% 0, 100% 50%, 82% 100%, 0 100%);"
+    >
+        59
+        <span class="absolute right-[10%] top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-white"></span>
+    </span>**********
+</h3>
+
 <button
     onclick="openProductModal(
         '**********',
         'โดรน',
         '',
-        'https://placehold.co/100x100/png?text=LOGO'
+        'https://placehold.co/100x100/png?text=LOGO',
+        '59'
     )"
     class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:border-primary hover:bg-gray-100 hover:text-primary transition-colors">
     ดูรายละเอียด
@@ -1349,13 +1743,26 @@ document.addEventListener('DOMContentLoaded', () => {
 <img alt="RO Production Machines" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://placehold.co/100x100/png?text=LOGO">
 </div>
 <div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
-<h3 class="text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">**********</h3>
+<h3 class="whitespace-nowrap text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">
+    <span
+        class="relative inline-flex items-center align-middle
+               bg-primary pl-2.5 pr-5 py-1.5 mr-2
+               text-[11px] sm:text-[14px] md:text-[15px] lg:text-[17px]
+               font-semibold leading-none tracking-wide text-white"
+        style="clip-path: polygon(0 0, 82% 0, 100% 50%, 82% 100%, 0 100%);"
+    >
+        60
+        <span class="absolute right-[10%] top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-white"></span>
+    </span>**********
+</h3>
+
 <button
     onclick="openProductModal(
         '**********',
         'จอCLD',
         '',
-        'https://placehold.co/100x100/png?text=LOGO'
+        'https://placehold.co/100x100/png?text=LOGO',
+        '60'
     )"
     class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:border-primary hover:bg-gray-100 hover:text-primary transition-colors">
     ดูรายละเอียด
@@ -1376,13 +1783,26 @@ document.addEventListener('DOMContentLoaded', () => {
 <img alt="เครื่องปรับอากาศพลังงานแสงอาทิตย์" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://placehold.co/100x100/png?text=LOGO">
 </div>
 <div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
-<h3 class="text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">เครื่องปรับอากาศพลังงานแสงอาทิตย์</h3>
+<h3 class="whitespace-nowrap text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">
+    <span
+        class="relative inline-flex items-center align-middle
+               bg-primary pl-2.5 pr-5 py-1.5 mr-2
+               text-[11px] sm:text-[14px] md:text-[15px] lg:text-[17px]
+               font-semibold leading-none tracking-wide text-white"
+        style="clip-path: polygon(0 0, 82% 0, 100% 50%, 82% 100%, 0 100%);"
+    >
+        61
+        <span class="absolute right-[10%] top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-white"></span>
+    </span>เครื่องปรับอากาศพลังงานแสงอาทิตย์
+</h3>
+
 <button
     onclick="openProductModal(
         'เครื่องปรับอากาศพลังงานแสงอาทิตย์',
         'แอร์โซล่าเซลล์',
         '',
-        'https://placehold.co/100x100/png?text=LOGO'
+        'https://placehold.co/100x100/png?text=LOGO',
+        '61'
     )"
     class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:border-primary hover:bg-gray-100 hover:text-primary transition-colors">
     ดูรายละเอียด
@@ -1404,13 +1824,26 @@ document.addEventListener('DOMContentLoaded', () => {
 <img alt="สารกรองน้ำ" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://placehold.co/100x100/png?text=LOGO">
 </div>
 <div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
-<h3 class="text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">สารกรองน้ำ</h3>
+<h3 class="whitespace-nowrap text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">
+    <span
+        class="relative inline-flex items-center align-middle
+               bg-primary pl-2.5 pr-5 py-1.5 mr-2
+               text-[11px] sm:text-[14px] md:text-[15px] lg:text-[17px]
+               font-semibold leading-none tracking-wide text-white"
+        style="clip-path: polygon(0 0, 82% 0, 100% 50%, 82% 100%, 0 100%);"
+    >
+        62
+        <span class="absolute right-[10%] top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-white"></span>
+    </span>สารกรองน้ำ
+</h3>
+
 <button
     onclick="openProductModal(
         'สารกรองน้ำ',
         'สารกรองและบริการ',
         '',
-        'https://placehold.co/100x100/png?text=LOGO'
+        'https://placehold.co/100x100/png?text=LOGO',
+        '62'
     )"
     class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:border-primary hover:bg-gray-100 hover:text-primary transition-colors">
     ดูรายละเอียด
@@ -1450,13 +1883,26 @@ document.addEventListener('DOMContentLoaded', () => {
 <img alt="ระบบสำหรับการเกษตร" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://placehold.co/100x100/png?text=LOGO">
 </div>
 <div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
-<h3 class="text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">ระบบสำหรับการเกษตร</h3>
+<h3 class="whitespace-nowrap text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">
+    <span
+        class="relative inline-flex items-center align-middle
+               bg-primary pl-2.5 pr-5 py-1.5 mr-2
+               text-[11px] sm:text-[14px] md:text-[15px] lg:text-[17px]
+               font-semibold leading-none tracking-wide text-white"
+        style="clip-path: polygon(0 0, 82% 0, 100% 50%, 82% 100%, 0 100%);"
+    >
+        63
+        <span class="absolute right-[10%] top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-white"></span>
+    </span>ระบบสำหรับการเกษตร
+</h3>
+
 <button
     onclick="openProductModal(
         'ระบบสำหรับการเกษตร',
         'เกษตรกรรม',
         '',
-        'https://placehold.co/100x100/png?text=LOGO'
+        'https://placehold.co/100x100/png?text=LOGO',
+        '63'
     )"
     class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:border-primary hover:bg-gray-100 hover:text-primary transition-colors">
     ดูรายละเอียด
@@ -1478,13 +1924,26 @@ document.addEventListener('DOMContentLoaded', () => {
 <img alt="ระบบสำหรับฟาร์ม" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://placehold.co/100x100/png?text=LOGO">
 </div>
 <div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
-<h3 class="text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">ระบบสำหรับฟาร์ม</h3>
+<h3 class="whitespace-nowrap text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">
+    <span
+        class="relative inline-flex items-center align-middle
+               bg-primary pl-2.5 pr-5 py-1.5 mr-2
+               text-[11px] sm:text-[14px] md:text-[15px] lg:text-[17px]
+               font-semibold leading-none tracking-wide text-white"
+        style="clip-path: polygon(0 0, 82% 0, 100% 50%, 82% 100%, 0 100%);"
+    >
+        64
+        <span class="absolute right-[10%] top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-white"></span>
+    </span>ระบบสำหรับฟาร์ม
+</h3>
+
 <button
     onclick="openProductModal(
         'ระบบสำหรับฟาร์ม',
         'ฟาร์ม',
         '',
-        'https://placehold.co/100x100/png?text=LOGO'
+        'https://placehold.co/100x100/png?text=LOGO',
+        '64'
     )"
     class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:border-primary hover:bg-gray-100 hover:text-primary transition-colors">
     ดูรายละเอียด
@@ -1506,13 +1965,26 @@ document.addEventListener('DOMContentLoaded', () => {
 <img alt="ระบบสำหรับที่พักอาศัย" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://placehold.co/100x100/png?text=LOGO">
 </div>
 <div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
-<h3 class="text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">ระบบสำหรับที่พักอาศัย</h3>
+<h3 class="whitespace-nowrap text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">
+    <span
+        class="relative inline-flex items-center align-middle
+               bg-primary pl-2.5 pr-5 py-1.5 mr-2
+               text-[11px] sm:text-[14px] md:text-[15px] lg:text-[17px]
+               font-semibold leading-none tracking-wide text-white"
+        style="clip-path: polygon(0 0, 82% 0, 100% 50%, 82% 100%, 0 100%);"
+    >
+        65
+        <span class="absolute right-[10%] top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-white"></span>
+    </span>ระบบสำหรับที่พักอาศัย
+</h3>
+
 <button
     onclick="openProductModal(
         'ระบบสำหรับที่พักอาศัย',
         'ที่พักอาศัยรายย่อย',
         '',
-        'https://placehold.co/100x100/png?text=LOGO'
+        'https://placehold.co/100x100/png?text=LOGO',
+        '65'
     )"
     class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:border-primary hover:bg-gray-100 hover:text-primary transition-colors">
     ดูรายละเอียด
@@ -1534,13 +2006,26 @@ document.addEventListener('DOMContentLoaded', () => {
 <img alt="ระบบโซล่าเซลล์" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://placehold.co/100x100/png?text=LOGO">
 </div>
 <div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
-<h3 class="text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">ระบบโซล่าเซลล์</h3>
+<h3 class="whitespace-nowrap text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">
+    <span
+        class="relative inline-flex items-center align-middle
+               bg-primary pl-2.5 pr-5 py-1.5 mr-2
+               text-[11px] sm:text-[14px] md:text-[15px] lg:text-[17px]
+               font-semibold leading-none tracking-wide text-white"
+        style="clip-path: polygon(0 0, 82% 0, 100% 50%, 82% 100%, 0 100%);"
+    >
+        66
+        <span class="absolute right-[10%] top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-white"></span>
+    </span>ระบบโซล่าเซลล์
+</h3>
+
 <button
     onclick="openProductModal(
         'ระบบโซล่าเซลล์',
         'โซล่าเซลล์',
         '',
-        'https://placehold.co/100x100/png?text=LOGO'
+        'https://placehold.co/100x100/png?text=LOGO',
+        '66'
     )"
     class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:border-primary hover:bg-gray-100 hover:text-primary transition-colors">
     ดูรายละเอียด
@@ -1562,13 +2047,26 @@ document.addEventListener('DOMContentLoaded', () => {
 <img alt="ระบบสำหรับสระว่ายน้ำ" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://placehold.co/100x100/png?text=LOGO">
 </div>
 <div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
-<h3 class="text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">ระบบสำหรับสระว่ายน้ำ</h3>
+<h3 class="whitespace-nowrap text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">
+    <span
+        class="relative inline-flex items-center align-middle
+               bg-primary pl-2.5 pr-5 py-1.5 mr-2
+               text-[11px] sm:text-[14px] md:text-[15px] lg:text-[17px]
+               font-semibold leading-none tracking-wide text-white"
+        style="clip-path: polygon(0 0, 82% 0, 100% 50%, 82% 100%, 0 100%);"
+    >
+        67
+        <span class="absolute right-[10%] top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-white"></span>
+    </span>ระบบสำหรับสระว่ายน้ำ
+</h3>
+
 <button
     onclick="openProductModal(
         'ระบบสำหรับสระว่ายน้ำ',
         'สระว่ายน้ำ',
         '',
-        'https://placehold.co/100x100/png?text=LOGO'
+        'https://placehold.co/100x100/png?text=LOGO',
+        '67'
     )"
     class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:border-primary hover:bg-gray-100 hover:text-primary transition-colors">
     ดูรายละเอียด
@@ -1590,13 +2088,26 @@ document.addEventListener('DOMContentLoaded', () => {
 <img alt="ระบบน้ำดื่มสะอาด" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://placehold.co/100x100/png?text=LOGO">
 </div>
 <div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
-<h3 class="text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">ระบบน้ำดื่มสะอาด</h3>
+<h3 class="whitespace-nowrap text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">
+    <span
+        class="relative inline-flex items-center align-middle
+               bg-primary pl-2.5 pr-5 py-1.5 mr-2
+               text-[11px] sm:text-[14px] md:text-[15px] lg:text-[17px]
+               font-semibold leading-none tracking-wide text-white"
+        style="clip-path: polygon(0 0, 82% 0, 100% 50%, 82% 100%, 0 100%);"
+    >
+        68
+        <span class="absolute right-[10%] top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-white"></span>
+    </span>ระบบน้ำดื่มสะอาด
+</h3>
+
 <button
     onclick="openProductModal(
         'ระบบน้ำดื่มสะอาด',
         'น้ำดื่มสะอาด',
         '',
-        'https://placehold.co/100x100/png?text=LOGO'
+        'https://placehold.co/100x100/png?text=LOGO',
+        '68'
     )"
     class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:border-primary hover:bg-gray-100 hover:text-primary transition-colors">
     ดูรายละเอียด
@@ -1618,13 +2129,26 @@ document.addEventListener('DOMContentLoaded', () => {
 <img alt="ระบบน้ำประปา" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://placehold.co/100x100/png?text=LOGO">
 </div>
 <div class="px-sm pt-sm pb-sm sm:px-md sm:pt-md sm:pb-md h-[90px] sm:h-[100px] md:h-[105px] lg:h-[110px] flex flex-col shrink-0">
-<h3 class="text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">ระบบน้ำประปา</h3>
+<h3 class="whitespace-nowrap text-[10px] sm:text-[13px] md:text-[14px] lg:text-[16px] text-on-surface mb-sm">
+    <span
+        class="relative inline-flex items-center align-middle
+               bg-primary pl-2.5 pr-5 py-1.5 mr-2
+               text-[11px] sm:text-[14px] md:text-[15px] lg:text-[17px]
+               font-semibold leading-none tracking-wide text-white"
+        style="clip-path: polygon(0 0, 82% 0, 100% 50%, 82% 100%, 0 100%);"
+    >
+        69
+        <span class="absolute right-[10%] top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-white"></span>
+    </span>ระบบน้ำประปา
+</h3>
+
 <button
     onclick="openProductModal(
         'ระบบน้ำประปา',
         'น้ำประปา',
         '',
-        'https://placehold.co/100x100/png?text=LOGO'
+        'https://placehold.co/100x100/png?text=LOGO',
+        '69'
     )"
     class="w-full py-[6px] px-sm sm:py-xs sm:px-md text-[10px] sm:text-[11px] md:text-[12px] lg:text-label-sm border border-outline text-on-surface rounded-full hover:border-primary hover:bg-gray-100 hover:text-primary transition-colors">
     ดูรายละเอียด
@@ -1885,6 +2409,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 น้ำประปา
             </a>
 
+            <a href="#catalog" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity" onclick="showCatalog('product', 'community-water-tanks', true); closeAllMobileMenu?.(); return false;">
+                ถังเก็บน้ำชุมชน
+            </a>
+
+            <a href="#catalog" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity" onclick="showCatalog('product', 'quality-water-pumps', true); closeAllMobileMenu?.(); return false;">
+                ปั๊มน้ำคุณภาพดี
+            </a>
+
             <a href="#catalog" class="text-[12px] sm:text-[13px] md:text-[14px] lg:text-base text-white/90 no-underline hover:opacity-80 transition-opacity" onclick="showCatalog('product', 'clean-drinking-water', true); closeAllMobileMenu?.(); return false;">
                 น้ำดื่มสะอาด
             </a>
@@ -2064,9 +2596,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 <span id="modalCategory"></span>
             </div>
 
-            <h2 id="modalTitle"
-                class="mb-3 text-[16px] sm:text-[18px] md:text-[22px] lg:text-2xl font-bold text-on-surface">
-            </h2>
+            <div class="mb-3 flex items-center gap-2">
+                <span id="modalProductCode"
+                      class="relative hidden shrink-0 items-center bg-primary pl-3 pr-6 py-2
+                             text-[17px] sm:text-[19px] md:text-[23px] lg:text-[25px]
+                             font-semibold leading-none tracking-wide text-white"
+                      style="clip-path: polygon(0 0, 82% 0, 100% 50%, 82% 100%, 0 100%);">
+                    <span id="modalProductCodeText"></span>
+                    <span class="absolute right-[10%] top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full bg-white"></span>
+                </span>
+
+                <h2 id="modalTitle"
+                    class="min-w-0 text-[16px] sm:text-[18px] md:text-[22px] lg:text-2xl font-bold text-on-surface">
+                </h2>
+            </div>
 
             <p id="modalDescription"
                class="mb-6 text-body-md text-on-surface-variant">
@@ -2099,11 +2642,24 @@ document.addEventListener('DOMContentLoaded', () => {
 <script>
 let currentImage = '';
 
-function openProductModal(title, category, description, image) {
+function openProductModal(title, category, description, image, productCode = '') {
 
     document.getElementById('modalTitle').textContent = title;
     document.getElementById('modalCategory').textContent = category;
     document.getElementById('modalDescription').textContent = description;
+
+    const modalProductCode = document.getElementById('modalProductCode');
+    const modalProductCodeText = document.getElementById('modalProductCodeText');
+
+    if (productCode) {
+        modalProductCodeText.textContent = productCode;
+        modalProductCode.classList.remove('hidden');
+        modalProductCode.classList.add('inline-flex');
+    } else {
+        modalProductCodeText.textContent = '';
+        modalProductCode.classList.add('hidden');
+        modalProductCode.classList.remove('inline-flex');
+    }
 
     const modalImg = document.getElementById('modalImg');
     modalImg.src = image;
