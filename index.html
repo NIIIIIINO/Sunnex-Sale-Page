@@ -155,7 +155,10 @@
 <header id="mainHeader" class="bg-transparent border-b border-transparent fixed top-0 w-full z-50 transition-all duration-300">
 <div class="flex justify-between items-center h-16 px-gutter max-w-container-max mx-auto">
 <div class="flex items-center gap-sm cursor-pointer">
-<img alt="Sunnex Technology Logo" class="h-14 w-auto filter invert" src="https://cdn.phototourl.com/free/2026-09-02-51104703-fa09-4411-91a1-76524803cf27.png">
+<img id="navbarLogo"
+     alt="Sunnex Technology Logo"
+     class="h-14 w-auto filter invert opacity-0 invisible -translate-y-2 transition-all duration-300"
+     src="https://cdn.phototourl.com/free/2026-09-02-51104703-fa09-4411-91a1-76524803cf27.png">
 </div>
 
 <nav class="hidden md:flex items-center gap-md">
@@ -2437,7 +2440,7 @@ document.addEventListener('DOMContentLoaded', () => {
     <div class="w-full px-sm sm:px-gutter">
 
         <!-- Footer Main -->
-<div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-4 gap-md sm:gap-lg lg:gap-xl items-start">
+<div class="grid grid-cols-1 xl:grid-cols-4 gap-md sm:gap-lg xl:gap-xl items-start">
 
     <!-- Logo -->
     <div class="flex items-start justify-center">
@@ -2892,15 +2895,26 @@ function closeBrochure(event) {
 
 <!--Script Scroll-->
 <script>
-window.addEventListener('scroll', function() {
+function updateNavbarOnScroll() {
     const header = document.getElementById('mainHeader');
+    const navbarLogo = document.getElementById('navbarLogo');
+
     if (window.scrollY > 50) {
         header.classList.remove('bg-transparent', 'border-transparent');
         header.classList.add('bg-surface-container-lowest', 'border-outline-variant', 'shadow-sm');
+
+        navbarLogo.classList.remove('opacity-0', 'invisible', '-translate-y-2');
+        navbarLogo.classList.add('opacity-100', 'visible', 'translate-y-0');
     } else {
         header.classList.add('bg-transparent', 'border-transparent');
         header.classList.remove('bg-surface-container-lowest', 'border-outline-variant', 'shadow-sm');
+
+        navbarLogo.classList.remove('opacity-100', 'visible', 'translate-y-0');
+        navbarLogo.classList.add('opacity-0', 'invisible', '-translate-y-2');
     }
-});
+}
+
+window.addEventListener('scroll', updateNavbarOnScroll);
+window.addEventListener('DOMContentLoaded', updateNavbarOnScroll);
 </script>
 </body></html>
