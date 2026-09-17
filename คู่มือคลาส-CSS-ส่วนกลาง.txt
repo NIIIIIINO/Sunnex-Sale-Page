@@ -1,0 +1,49 @@
+คลาส CSS ส่วนกลางของเว็บไซต์ SUNNEX
+===================================
+
+ไฟล์ที่ใช้แก้:
+assets/css/components.css
+
+คลาสหลัก
+---------
+
+.brochure-card                 กรอบการ์ดโบรชัวร์หลัก
+.brochure-card__media          พื้นที่ภาพโบรชัวร์
+.brochure-card__image          ภาพและเอฟเฟกต์ซูม
+.brochure-card__body           พื้นที่ชื่อและปุ่ม
+.brochure-card__title          ชื่อสินค้า
+.brochure-card__button         ปุ่มดูรายละเอียด
+.product-code-tag              ป้ายรหัสสินค้าแบบ Price Tag
+.product-code-tag__dot         จุดสีขาวบน Price Tag
+
+.related-product-card          การ์ดสินค้าใกล้เคียง
+.related-product-card__media   พื้นที่ภาพสินค้าใกล้เคียง
+.related-product-card__image   เอฟเฟกต์ภาพสินค้าใกล้เคียง
+.related-product-card__body    พื้นที่ข้อมูลสินค้าใกล้เคียง
+.related-products-row          แถวสินค้าใกล้เคียงแนวนอน
+
+.brochure-grid                 Grid แสดงโบรชัวร์ 2 / 3 / 4 คอลัมน์
+.page-title                    หัวข้อหลักของหน้า
+.section-title                 หัวข้อส่วนย่อย
+.section-description           ข้อความอธิบายส่วนย่อย
+
+.product-brochure-frame        กรอบภาพในหน้ารายละเอียด
+.product-brochure-image        ภาพโบรชัวร์ในหน้ารายละเอียด
+.product-image-overlay         Overlay ดูภาพเต็ม
+.primary-action                ปุ่มหลักที่ใช้ซ้ำ
+
+สีและเอฟเฟกต์หลักแก้ได้จากตัวแปรด้านบนของ components.css เช่น:
+
+--sunnex-brand
+--sunnex-card-radius
+--sunnex-card-shadow
+--sunnex-card-shadow-hover
+--sunnex-card-lift
+--sunnex-image-zoom
+--sunnex-effect-speed
+
+หมายเหตุ SEO
+------------
+
+การปรับครั้งนี้เปลี่ยนเฉพาะ class สำหรับตกแต่ง ไม่เปลี่ยนข้อความ ลำดับหัวข้อ
+H1/H2/H3, URL, meta description, alt, structured data หรือ internal links

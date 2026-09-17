@@ -1,0 +1,36 @@
+การตั้งค่าการแสดงสินค้า SUNNEX
+
+ไฟล์ตั้งค่า: product-settings.js
+
+แต่ละสินค้ามี 3 ค่า
+
+1. visible
+   true  = แสดงในการ์ดหน้ารวมสินค้า หน้าหมวดหมู่ และสินค้าแนะนำ
+   false = ซ่อนจากรายการเหล่านี้ แต่ยังเก็บหน้ารายละเอียดสินค้าไว้
+
+2. showOnHome
+   true  = อนุญาตให้นำไปแสดงเป็นสินค้าตัวอย่างในหน้าแรก
+   false = ไม่แสดงเป็นตัวอย่างบนหน้าแรก
+
+3. indexable
+   true  = ให้ Google เก็บหน้าสินค้า และเพิ่ม URL ใน sitemap.xml
+   false = ใส่ noindex,follow และนำ URL สินค้าออกจาก sitemap.xml
+
+ตัวอย่างปิดสินค้าทั้งหมด:
+
+'surface-water-filter': {
+  visible: false,
+  showOnHome: false,
+  indexable: false
+}
+
+ตัวอย่างซ่อนเฉพาะหน้าแรก แต่ยังแสดงในหน้าหมวดหมู่:
+
+'surface-water-filter': {
+  visible: true,
+  showOnHome: false,
+  indexable: true
+}
+
+หมายเหตุ: เว็บเป็น Static HTML เมื่อแก้ไฟล์ตั้งค่าแล้วต้องสั่งสร้างเว็บใหม่
+ด้วย build_seo_site.js ก่อนนำไฟล์ขึ้น GitHub Pages

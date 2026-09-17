@@ -1,0 +1,265 @@
+/*
+  SUNNEX reusable components
+  แก้ไฟล์นี้จุดเดียวเพื่อปรับรูปแบบองค์ประกอบที่ใช้ซ้ำทุกหน้า
+  คลาส Tailwind เดิมยังอยู่ใน HTML เป็น fallback เพื่อรักษาหน้าตาเดิมทุก breakpoint
+*/
+
+:root {
+  --sunnex-brand: #054097;
+  --sunnex-card-bg: #ffffff;
+  --sunnex-card-border: #e2e8f0;
+  --sunnex-card-radius: 1rem;
+  --sunnex-card-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+  --sunnex-card-shadow-hover: 0 20px 25px -5px rgba(0, 0, 0, 0.10), 0 8px 10px -6px rgba(0, 0, 0, 0.10);
+  --sunnex-card-lift: -0.25rem;
+  --sunnex-image-zoom: 1.05;
+  --sunnex-effect-speed: 700ms;
+  --sunnex-effect-easing: cubic-bezier(0.4, 0, 0.2, 1);
+  --sunnex-faq-speed: 360ms;
+  interpolate-size: allow-keywords;
+}
+
+/* ===== การ์ดโบรชัวร์หลัก ===== */
+.brochure-card {
+  background: var(--sunnex-card-bg);
+  border: 1px solid var(--sunnex-card-border);
+  border-radius: var(--sunnex-card-radius);
+  box-shadow: var(--sunnex-card-shadow);
+  overflow: hidden;
+  transition: transform 150ms var(--sunnex-effect-easing), box-shadow 150ms var(--sunnex-effect-easing);
+}
+
+.brochure-card:hover {
+  transform: translateY(var(--sunnex-card-lift));
+  box-shadow: var(--sunnex-card-shadow-hover);
+}
+
+.brochure-card__media {
+  aspect-ratio: 1414 / 2000;
+  border-bottom: 4px solid var(--sunnex-brand);
+  overflow: hidden;
+}
+
+.brochure-card__image {
+  transition: transform var(--sunnex-effect-speed) var(--sunnex-effect-easing);
+}
+
+.brochure-card:hover .brochure-card__image {
+  transform: scale(var(--sunnex-image-zoom));
+}
+
+.brochure-card__body { height: 100px; }
+.brochure-card__title { min-height: 28px; }
+
+.product-code-tag {
+  background: var(--sunnex-brand);
+  clip-path: polygon(0 0, 82% 0, 100% 50%, 82% 100%, 0 100%);
+}
+
+.product-code-tag__dot { background: #ffffff; }
+
+.brochure-card__button {
+  transition: color 150ms var(--sunnex-effect-easing), background-color 150ms var(--sunnex-effect-easing), border-color 150ms var(--sunnex-effect-easing);
+}
+
+.brochure-card__button:hover {
+  color: var(--sunnex-brand);
+  border-color: var(--sunnex-brand);
+  background: #eff6ff;
+}
+
+@media (min-width: 640px) {
+  .brochure-card__body { height: 115px; }
+  .brochure-card__title { min-height: 34px; }
+}
+
+@media (min-width: 768px) {
+  .brochure-card__body { height: 125px; }
+  .brochure-card__title { min-height: 45px; }
+}
+
+@media (min-width: 1024px) {
+  .brochure-card__title { min-height: 42px; }
+}
+
+/* ===== สินค้าใกล้เคียง / สินค้าแนะนำ ===== */
+.related-product-card {
+  border: 1px solid var(--sunnex-card-border);
+  border-radius: 0.75rem;
+  background: var(--sunnex-card-bg);
+  overflow: hidden;
+  transition: transform 150ms var(--sunnex-effect-easing), box-shadow 150ms var(--sunnex-effect-easing);
+}
+
+.related-product-card:hover {
+  transform: translateY(var(--sunnex-card-lift));
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.10), 0 4px 6px -4px rgba(0, 0, 0, 0.10);
+}
+
+.related-product-card__media {
+  aspect-ratio: 1414 / 2000;
+  border-bottom: 2px solid var(--sunnex-brand);
+  overflow: hidden;
+}
+
+.related-product-card__image { transition: transform 500ms var(--sunnex-effect-easing); }
+.related-product-card:hover .related-product-card__image { transform: scale(var(--sunnex-image-zoom)); }
+.related-product-card__body { height: 76px; }
+.related-products-row { scrollbar-width: none; }
+.related-products-row::-webkit-scrollbar { display: none; }
+
+/* ===== Grid และหัวข้อที่ใช้ซ้ำ ===== */
+.brochure-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.page-title,
+.section-title,
+.section-description {
+  font-family: 'Prompt', sans-serif;
+}
+
+.section-title { color: #0f172a; }
+.section-description { color: #475569; }
+
+@media (min-width: 768px) {
+  .brochure-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .brochure-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+/* ===== หน้ารายละเอียดและภาพ Overlay ===== */
+.product-brochure-frame {
+  overflow: hidden;
+  border: 1px solid var(--sunnex-card-border);
+  border-radius: 1.5rem;
+  background: #ffffff;
+}
+
+.product-brochure-image { width: 100%; height: auto; }
+.product-image-overlay { background: rgba(0, 0, 0, 0.75); backdrop-filter: blur(4px); }
+.primary-action { transition: color 150ms var(--sunnex-effect-easing), background-color 150ms var(--sunnex-effect-easing), border-color 150ms var(--sunnex-effect-easing); }
+
+/* ===== คำถามที่พบบ่อยแบบ Accordion ===== */
+.faq-list {
+  overflow: hidden;
+}
+
+.faq-item {
+  border-top: 1px solid #e2e8f0;
+}
+
+.faq-question {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  list-style: none;
+  padding: 1.25rem 3rem 1.25rem 0;
+  color: #0f172a;
+  transition: color 180ms var(--sunnex-effect-easing);
+}
+
+.faq-question::-webkit-details-marker { display: none; }
+.faq-question::marker { display: none; content: ''; }
+
+.faq-question::after {
+  content: '+';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+  border-radius: 9999px;
+  background: #eff6ff;
+  color: var(--sunnex-brand);
+  font-size: 1.35rem;
+  font-weight: 500;
+  line-height: 1;
+  transition: transform var(--sunnex-faq-speed) var(--sunnex-effect-easing), background-color 220ms var(--sunnex-effect-easing), color 220ms var(--sunnex-effect-easing);
+}
+
+.faq-question:hover,
+.faq-question:focus-visible {
+  color: var(--sunnex-brand);
+}
+
+.faq-question:hover::after {
+  transform: translateY(-50%) scale(1.06);
+}
+
+.faq-question:focus-visible {
+  border-radius: 0.5rem;
+  outline: 2px solid rgba(5, 64, 151, 0.35);
+  outline-offset: 3px;
+}
+
+.faq-item[open] > .faq-question::after {
+  content: '−';
+  background: var(--sunnex-brand);
+  color: #ffffff;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.faq-answer {
+  padding: 0 3rem 1.25rem 0;
+  animation: faq-answer-in 180ms var(--sunnex-effect-easing);
+}
+
+.faq-answer p {
+  margin: 0;
+  color: #475569;
+  line-height: 1.75;
+}
+
+@keyframes faq-answer-in {
+  from { opacity: 0; transform: translateY(-0.35rem); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Chrome / Edge รุ่นใหม่: เลื่อนความสูงได้สมูททั้งตอนเปิดและตอนปิด */
+@supports selector(details::details-content) {
+  .faq-item::details-content {
+    block-size: 0;
+    overflow: hidden;
+    opacity: 0;
+    content-visibility: hidden;
+    transition:
+      block-size var(--sunnex-faq-speed) var(--sunnex-effect-easing),
+      opacity 240ms var(--sunnex-effect-easing),
+      content-visibility var(--sunnex-faq-speed) allow-discrete;
+    transition-behavior: allow-discrete;
+  }
+
+  .faq-item[open]::details-content {
+    block-size: auto;
+    opacity: 1;
+    content-visibility: visible;
+  }
+
+  .faq-item[open] .faq-answer {
+    animation: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .faq-item::details-content,
+  .faq-question::after,
+  .faq-answer {
+    animation: none;
+    transition: none;
+  }
+}
